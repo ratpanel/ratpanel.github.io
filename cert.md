@@ -21,7 +21,6 @@ next: false
     flex: 1;
     padding: 24px;
     border-radius: 8px;
-    background: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -39,12 +38,10 @@ next: false
   }
   
   .cert-subtitle {
-    color: #666;
     margin-bottom: 8px;
   }
   
   .cert-price {
-    color: #4080ff;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 24px;
@@ -52,7 +49,6 @@ next: false
   
   .cert-price span {
     font-size: 14px;
-    color: #666;
   }
   
   .cert-features {
@@ -64,18 +60,13 @@ next: false
     align-items: center;
     gap: 8px;
     margin-bottom: 12px;
-    color: #333;
-  }
-  
-  .cert-check-icon {
-    color: #4080ff;
   }
   
   .cert-buy-button {
+    color: white;
     width: 100%;
     padding: 12px;
     background: #4080ff;
-    color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -108,17 +99,15 @@ next: false
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4080ff;
     font-size: 24px;
   }
   
   .cert-feature-content h3 {
-    margin: 8px 0;
+    margin: 8px 0!important;
     font-size: 18px;
   }
   
   .cert-feature-content p {
-    color: #666;
     line-height: 1.5;
   }
 </style>
