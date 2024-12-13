@@ -177,30 +177,29 @@ next: false
       <div class="cert-feature-icon">🛡️</div>
       <div class="cert-feature-content">
         <h3>安全可靠</h3>
-        <p>采用国际标准加密算法，保护您的网站安全</p>
+        <p>采用国际标准，保护网站安全</p>
       </div>
     </div>
     <div class="cert-feature-card">
       <div class="cert-feature-icon">⚡</div>
       <div class="cert-feature-content">
-        <h3>快速部署</h3>
-        <p>自动化安装配置，一键完成部署</p>
+        <h3>快速签发</h3>
+        <p>简化签发流程，快速颁发证书</p>
       </div>
     </div>
     <div class="cert-feature-card">
       <div class="cert-feature-icon">💳</div>
       <div class="cert-feature-content">
         <h3>灵活付费</h3>
-        <p>多种套餐可选，满足不同需求</p>
+        <p>多种规格可选，满足不同需求</p>
       </div>
     </div>
     <div class="cert-feature-card">
       <div class="cert-feature-icon">👨‍💻</div>
       <div class="cert-feature-content">
         <h3>专业服务</h3>
-        <p>7*24小时技术支持，确保证书正常使用</p>
+        <p>专业技术支持，保障使用无忧</p>
       </div>
     </div>
   </div>
 </div>
-    

@@ -25,14 +25,6 @@ const members = [
       { icon: 'github', link: 'https://github.com/205125' }
     ]
   },
-  {
-    avatar: 'https://weavatar.com/avatar/c74008bc2b2e853db10fcc58359ad8a38886d5e6b4d502f408aec91e5dc609e7',
-    name: '冭',
-    desc: '证书销售',
-    links: [
-      { icon: 'tencentqq', link: 'https://wpa.qq.com/msgrd?v=3&uin=1429182374&site=qq&menu=yes' },
-    ]
-  },
 ]
 </script>
 
