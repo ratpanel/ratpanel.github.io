@@ -10,7 +10,6 @@ export default defineConfig({
     title: "耗子面板",
     description: "简单轻量 • 高效运维",
     lang: "zh",
-    lastUpdated: true,
     locales: {
         root: {
             label: '简体中文',
@@ -30,7 +29,7 @@ export default defineConfig({
                     copyright: '© 2022-2024 Tianjin Rat Technology Co., Ltd All Rights Reserved'
                 },
                 editLink: {
-                    pattern: "https://github.com/ratpanel/ratpanel.github.io/edit/main/src/:path",
+                    pattern: "https://github.com/ratpanel/ratpanel.github.io/edit/main/:path",
                     text: "Edit this page on GitHub"
                 },
             },
@@ -81,11 +80,11 @@ export default defineConfig({
             {icon: 'wechat', link: 'https://work.weixin.qq.com/gm/d8ebf618553398d454e3378695c858b6'},
         ],
         footer: {
-            message: '<b style="font-size: larger; padding-bottom: 20px">严禁使用耗子面板从事违法活动，我司拒绝对违规使用的用户提供任何服务</b>',
+            message: '<b style="font-size: larger; padding-bottom: 20px">严禁使用耗子面板从事违法活动，我司不对违规用户提供任何服务</b>',
             copyright: '© 2022-2024 天津耗子科技有限公司 版权所有丨<a target="_blank" href="https://beian.miit.gov.cn/" rel="noreferrer">津ICP备2022009678号-1</a>丨<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=12011502000848" rel="noreferrer">津公网安备12011502000848号</a>'
         },
         editLink: {
-            pattern: "https://github.com/ratpanel/ratpanel.github.io/edit/main/src/:path",
+            pattern: "https://github.com/ratpanel/ratpanel.github.io/edit/main/:path",
             text: "在 GitHub 上编辑此页面"
         },
         search: {
