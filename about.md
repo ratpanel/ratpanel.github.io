@@ -156,7 +156,7 @@ next: false
     <div class="team-member">
       <div class="team-icon">🔒</div>
       <h3>冭</h3>
-      <p>证书经销</p>
+      <p>证书销售</p>
     </div>
   </div>
 </div>

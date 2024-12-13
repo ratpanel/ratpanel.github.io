@@ -51,15 +51,48 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                     {
-                        text: '安装',
+                        text: '安装面板',
                         link: '/quickstart/install'
+                    },
+                    {
+                        text: '挂载分区',
+                        link: '/quickstart/disk'
+                    },
+                    {
+                        text: '管理面板',
+                        link: '/quickstart/panel'
+                    },
+                    {
+                        text: '管理容器',
+                        link: '/quickstart/container'
                     },
                 ],
             },
             {
                 text: '深入了解',
                 collapsed: true,
-                items: [],
+                items: [
+                    {
+                        text: '配置容器镜像加速',
+                        link: '/advanced/hub-mirror'
+                    },
+                    {
+                        text: '配置反向代理',
+                        link: '/advanced/proxy'
+                    },
+                    {
+                        text: '配置 QUIC（HTTP3）',
+                        link: '/advanced/quic'
+                    },
+                    {
+                        text: '配置 TLSv1.1 TLSv1',
+                        link: '/advanced/tls'
+                    },
+                    {
+                        text: '安全性建议',
+                        link: '/advanced/safe'
+                    },
+                ],
             },
             {
                 text: '版本日志',
@@ -79,14 +112,36 @@ export default defineConfig({
             {icon: 'tencentqq', link: 'https://jq.qq.com/?_wv=1027&k=I1oJKSTH'},
             {icon: 'wechat', link: 'https://work.weixin.qq.com/gm/d8ebf618553398d454e3378695c858b6'},
         ],
-        footer: {
-            message: '<b style="font-size: larger; padding-bottom: 20px">严禁使用耗子面板从事违法活动，我司不对违规用户提供任何服务</b>',
-            copyright: '© 2022-2024 天津耗子科技有限公司 版权所有丨<a target="_blank" href="https://beian.miit.gov.cn/" rel="noreferrer">津ICP备2022009678号-1</a>丨<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=12011502000848" rel="noreferrer">津公网安备12011502000848号</a>'
-        },
         editLink: {
             pattern: "https://github.com/ratpanel/ratpanel.github.io/edit/main/:path",
             text: "在 GitHub 上编辑此页面"
         },
+        footer: {
+            message: '<b style="font-size: larger; padding-bottom: 20px">严禁使用耗子面板从事违法活动，我司不对违规用户提供任何服务</b>',
+            copyright: '© 2022-2024 天津耗子科技有限公司 版权所有丨<a target="_blank" href="https://beian.miit.gov.cn/" rel="noreferrer">津ICP备2022009678号-1</a>丨<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=12011502000848" rel="noreferrer">津公网安备12011502000848号</a>'
+        },
+        docFooter: {
+            prev: '上一页',
+            next: '下一页'
+        },
+        outline: {
+            label: '页面导航'
+        },
+
+        lastUpdated: {
+            text: '最后更新于',
+            formatOptions: {
+                dateStyle: 'short',
+                timeStyle: 'medium'
+            }
+        },
+        langMenuLabel: '多语言',
+        returnToTopLabel: '回到顶部',
+        sidebarMenuLabel: '菜单',
+        darkModeSwitchLabel: '主题',
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
+        skipToContentLabel: '跳转到内容',
         search: {
             provider: 'local',
             options: {
