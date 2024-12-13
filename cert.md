@@ -11,13 +11,13 @@ next: false
 受限价政策，具体价格及购买请直接通过右上角加群联系销售。
 
 <style>
-  .cards-container {
+  .cert-cards-container {
     display: flex;
     gap: 20px;
     margin-bottom: 40px;
   }
   
-  .card {
+  .cert-card {
     flex: 1;
     padding: 24px;
     border-radius: 8px;
@@ -25,41 +25,41 @@ next: false
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
-  .card-header {
+  .cert-card-header {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 16px;
   }
   
-  .card-title {
+  .cert-card-title {
     margin: 0!important;
     border-top: unset!important;
     padding-top: unset!important;
   }
   
-  .subtitle {
+  .cert-subtitle {
     color: #666;
     margin-bottom: 8px;
   }
   
-  .price {
+  .cert-price {
     color: #4080ff;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 24px;
   }
   
-  .price span {
+  .cert-price span {
     font-size: 14px;
     color: #666;
   }
   
-  .features2 {
+  .cert-features {
     margin-bottom: 24px;
   }
   
-  .feature-item {
+  .cert-feature-item {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -67,11 +67,11 @@ next: false
     color: #333;
   }
   
-  .check-icon {
+  .cert-check-icon {
     color: #4080ff;
   }
   
-  .buy-button {
+  .cert-buy-button {
     width: 100%;
     padding: 12px;
     background: #4080ff;
@@ -82,27 +82,27 @@ next: false
     font-size: 16px;
   }
   
-  .buy-button:hover {
+  .cert-buy-button:hover {
     background: #3570e0;
   }
   
-  .features-section {
+  .cert-features-section {
     margin-top: 40px;
   }
   
-  .features-grid {
+  .cert-features-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
   
-  .feature-card2 {
+  .cert-feature-card {
     display: flex;
     gap: 16px;
     align-items: flex-start;
   }
   
-  .feature-icon {
+  .cert-feature-icon {
     width: 40px;
     height: 40px;
     display: flex;
@@ -112,12 +112,12 @@ next: false
     font-size: 24px;
   }
   
-  .feature-content h3 {
+  .cert-feature-content h3 {
     margin: 8px 0;
     font-size: 18px;
   }
   
-  .feature-content p {
+  .cert-feature-content p {
     color: #666;
     line-height: 1.5;
   }
@@ -125,95 +125,93 @@ next: false
 
 ## 选购证书
 
-<div class="cards-container">
-  <div class="card">
-    <div class="card-header">
-      <h2 class="card-title">DV 单域名证书</h2>
+<div class="cert-cards-container">
+  <div class="cert-card">
+    <div class="cert-card-header">
+      <h2 class="cert-card-title">DV 单域名证书</h2>
     </div>
-    <div class="subtitle">国际知名品牌证书</div>
-    <div class="price">¥1X<span>/年</span></div>
-    <div class="features2">
-      <div class="feature-item">
-        <span class="check-icon">✓</span>
+    <div class="cert-subtitle">国际知名品牌证书</div>
+    <div class="cert-price">¥1X<span>/年</span></div>
+    <div class="cert-features">
+      <div class="cert-feature-item">
+        <span class="cert-check-icon">✓</span>
         <span>域名型证书（DV）</span>
       </div>
-      <div class="feature-item">
-        <span class="check-icon">✓</span>
+      <div class="cert-feature-item">
+        <span class="cert-check-icon">✓</span>
         <span>支持一个域名</span>
       </div>
-      <div class="feature-item">
-        <span class="check-icon">✓</span>
+      <div class="cert-feature-item">
+        <span class="cert-check-icon">✓</span>
         <span>一年有效期</span>
       </div>
-      <div class="feature-item">
-        <span class="check-icon">✓</span>
+      <div class="cert-feature-item">
+        <span class="cert-check-icon">✓</span>
         <span>快速颁发</span>
       </div>
     </div>
-    <button class="buy-button">右上角联系销售购买</button>
+    <button class="cert-buy-button">右上角联系销售购买</button>
   </div>
-  <div class="card">
-    <div class="card-header">
-      <h2 class="card-title">DV 通配符证书</h2>
+  <div class="cert-card">
+    <div class="cert-card-header">
+      <h2 class="cert-card-title">DV 通配符证书</h2>
     </div>
-    <div class="subtitle">国际知名品牌证书</div>
-    <div class="price">¥1XX<span>/年</span></div>
-    <div class="features2">
-      <div class="feature-item">
-        <span class="check-icon">✓</span>
+    <div class="cert-subtitle">国际知名品牌证书</div>
+    <div class="cert-price">¥1XX<span>/年</span></div>
+    <div class="cert-features">
+      <div class="cert-feature-item">
+        <span class="cert-check-icon">✓</span>
         <span>域名型证书（DV）</span>
       </div>
-      <div class="feature-item">
-        <span class="check-icon">✓</span>
+      <div class="cert-feature-item">
+        <span class="cert-check-icon">✓</span>
         <span>通配所有子域</span>
       </div>
-      <div class="feature-item">
-        <span class="check-icon">✓</span>
+      <div class="cert-feature-item">
+        <span class="cert-check-icon">✓</span>
         <span>一年有效期</span>
       </div>
-      <div class="feature-item">
-        <span class="check-icon">✓</span>
+      <div class="cert-feature-item">
+        <span class="cert-check-icon">✓</span>
         <span>快速颁发</span>
       </div>
     </div>
-    <button class="buy-button">右上角联系销售购买</button>
+    <button class="cert-buy-button">右上角联系销售购买</button>
   </div>
 </div>
 
 ## 证书特点
 
-<div class="features-section">
-  <div class="features-grid">
-    <div class="feature-card2">
-      <div class="feature-icon">🛡️</div>
-      <div class="feature-content">
+<div class="cert-features-section">
+  <div class="cert-features-grid">
+    <div class="cert-feature-card">
+      <div class="cert-feature-icon">🛡️</div>
+      <div class="cert-feature-content">
         <h3>安全可靠</h3>
         <p>采用国际标准加密算法，保护您的网站安全</p>
       </div>
     </div>
-    <div class="feature-card2">
-      <div class="feature-icon">⚡</div>
-      <div class="feature-content">
+    <div class="cert-feature-card">
+      <div class="cert-feature-icon">⚡</div>
+      <div class="cert-feature-content">
         <h3>快速部署</h3>
         <p>自动化安装配置，一键完成部署</p>
       </div>
     </div>
-    <div class="feature-card2">
-      <div class="feature-icon">💳</div>
-      <div class="feature-content">
+    <div class="cert-feature-card">
+      <div class="cert-feature-icon">💳</div>
+      <div class="cert-feature-content">
         <h3>灵活付费</h3>
         <p>多种套餐可选，满足不同需求</p>
       </div>
     </div>
-    <div class="feature-card2">
-      <div class="feature-icon">👨‍💻</div>
-      <div class="feature-content">
+    <div class="cert-feature-card">
+      <div class="cert-feature-icon">👨‍💻</div>
+      <div class="cert-feature-content">
         <h3>专业服务</h3>
         <p>7*24小时技术支持，确保证书正常使用</p>
       </div>
     </div>
   </div>
 </div>
-
-
     

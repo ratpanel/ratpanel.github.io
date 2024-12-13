@@ -3,7 +3,7 @@ export default {
         const resp = await (await fetch('https://panel.haozi.net/api/versions')).json()
         if (!resp.message || resp.message !== 'success') return []
 
-        return resp.data.map((item: any) => {
+        return resp.data.slice(0, 10).map((item: any) => {
             return {
                 params: {
                     version: item.version,

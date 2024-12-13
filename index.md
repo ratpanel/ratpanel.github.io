@@ -14,9 +14,6 @@ hero:
     - theme: alt
       text: 快速安装
       link: /quickstart/install
-    - theme: alt
-      text: 进阶手册
-      link: /advanced/index
 
 features:
   - icon: ✨

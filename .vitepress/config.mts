@@ -1,7 +1,7 @@
 import {defineConfig} from 'vitepress'
 
 const resp = await (await fetch('https://panel.haozi.net/api/versions')).json()
-const versions = resp.data.map((item: any) => {
+const versions = resp.data.slice(0, 10).map((item: any) => {
     return item.version
 })
 
@@ -69,7 +69,7 @@ export default defineConfig({
                 ],
             },
             {
-                text: '深入了解',
+                text: '进阶指南',
                 collapsed: true,
                 items: [
                     {
@@ -127,14 +127,6 @@ export default defineConfig({
         outline: {
             label: '页面导航'
         },
-
-        lastUpdated: {
-            text: '最后更新于',
-            formatOptions: {
-                dateStyle: 'short',
-                timeStyle: 'medium'
-            }
-        },
         langMenuLabel: '多语言',
         returnToTopLabel: '回到顶部',
         sidebarMenuLabel: '菜单',
@@ -166,4 +158,11 @@ export default defineConfig({
             }
         }
     },
+    transformPageData: (pageData) => {
+        // 为版本页单独设置标题
+        // https://github.com/vuejs/vitepress/discussions/2516
+        if (pageData.params?.version) {
+            pageData.title = `v${pageData.params.version}`
+        }
+    }
 })
