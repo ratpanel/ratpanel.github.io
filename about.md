@@ -10,20 +10,13 @@ next: false
 
 耗子面板是一款专业的服务器运维管理面板，致力于为用户提供简单、高效、安全的服务器管理解决方案。
 
+| 愿景                | 使命            | 价值观            |
+|-------------------|---------------|----------------|
+| 成为领先的服务器管理解决方案提供商 | 让服务器管理变得简单而高效 | 用户至上、创新驱动、专业专注 |
+
+## 团队介绍
+
 <style>
-  .about-features {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 60px;
-  }
-  .about-feature-card {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-    text-align: center;
-  }
   .about-team {
     text-align: center;
     margin-bottom: 60px;
@@ -89,57 +82,7 @@ next: false
     font-weight: bold;
     margin-bottom: 10px;
   }
-  .about-contact {
-    text-align: center;
-  }
-  .about-contact-items {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    margin-top: 30px;
-  }
-  .about-contact-item {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1;
-  }
-  .about-contact-icon {
-    font-size: x-large;
-    width: 60px;
-    height: 60px;
-    background: #e7f1ff;
-    border-radius: 50%;
-    margin: 0 auto 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .about-h2 {
-    margin-bottom: 30px;
-    font-size: 24px;
-  }
-  .about-p {
-    margin-bottom: 15px;
-  }
 </style>
-
-<div class="about-features">
-  <div class="about-feature-card">
-    <h3>愿景</h3>
-    <p>成为领先的服务器管理解决方案提供商</p>
-  </div>
-  <div class="about-feature-card">
-    <h3>使命</h3>
-    <p>让服务器管理变得简单而强大</p>
-  </div>
-  <div class="about-feature-card">
-    <h3>价值观</h3>
-    <p>用户至上、创新驱动、专业专注</p>
-  </div>
-</div>
-
-## 团队介绍
 
 <div class="about-team">
   <div class="about-team-members">
@@ -194,22 +137,9 @@ next: false
 
 ## 联系我们
 
-<div class="about-contact">
-  <div class="about-contact-items">
-    <div class="about-contact-item">
-      <div class="about-contact-icon">📧</div>
-      <h3>电子邮件</h3>
-      <p>admin@haozi.net</p>
-    </div>
-    <div class="about-contact-item">
-      <div class="about-contact-icon">📞</div>
-      <h3>联系电话</h3>
-      <p>13820906945</p>
-    </div>
-    <div class="about-contact-item">
-      <div class="about-contact-icon">📍</div>
-      <h3>公司地址</h3>
-      <p>天津市武清区黄庄街道泉里路1号智库大厦206室</p>
-    </div>
-  </div>
-</div>
+| 名称   | 联系方式                                                                     |
+|------|--------------------------------------------------------------------------|
+| 企业微信 | [点击联系](https://work.weixin.qq.com/kfid/kfc20ea8e38b5a4e73a)              |
+| QQ   | [826896000](https://wpa.qq.com/msgrd?v=3&uin=826896000&site=qq&menu=yes) |
+| 电子邮件 | [admin@haozi.net](mailto:admin@haozi.net)                                |
+| 公司地址 | 天津市武清区黄庄街道泉里路1号智库大厦206室                                                  |
