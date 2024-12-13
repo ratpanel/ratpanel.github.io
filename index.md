@@ -4,9 +4,8 @@ layout: home
 
 hero:
   name: "耗子面板"
-  text: "简单轻量，高效运维"
+  text: "简单轻量 • 高效运维"
   tagline: 企业级服务器运维管理面板
-  image: /.github/assets/ui.png
   actions:
     - theme: brand
       text: 🌟 点亮 Star

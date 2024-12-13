@@ -3,7 +3,7 @@ import {defineConfig} from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "耗子面板",
-    description: "简单轻量，高效运维",
+    description: "简单轻量 • 高效运维",
     lang: "zh",
     lastUpdated: true,
     locales: {

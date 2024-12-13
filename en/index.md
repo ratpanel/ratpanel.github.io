@@ -4,9 +4,8 @@ layout: home
 
 hero:
   name: "Rat Panel"
-  text: "Simple and lightweight"
+  text: "Simple · lightweight · efficient"
   tagline: Enterprise server operation and maintenance management panel
-  image: /.github/assets/ui.png
   actions:
     - theme: brand
       text: 🌟 Star
