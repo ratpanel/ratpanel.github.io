@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "耗子面板"
-  text: "耗子面板官网"
+  text: "简单轻量，高效运维"
   tagline: My great project tagline
   actions:
     - theme: brand
