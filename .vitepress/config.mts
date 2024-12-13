@@ -1,5 +1,10 @@
 import {defineConfig} from 'vitepress'
 
+const resp = await (await fetch('https://panel.haozi.net/api/versions')).json()
+const versions = resp.data.map((item: any) => {
+    return item.version
+})
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "耗子面板",
@@ -11,7 +16,7 @@ export default defineConfig({
             label: '简体中文',
             lang: 'zh-Hans',
         },
-        en: {
+        /*en: {
             label: 'English',
             lang: 'en',
             title: 'Rat Panel',
@@ -23,31 +28,65 @@ export default defineConfig({
                 footer: {
                     message: 'This website is powered by Rat Panel',
                     copyright: '© 2022-2024 Tianjin Rat Technology Co., Ltd All Rights Reserved'
-                }
+                },
+                editLink: {
+                    pattern: "https://github.com/ratpanel/ratpanel.github.io/edit/main/src/:path",
+                    text: "Edit this page on GitHub"
+                },
             },
-        },
+        },*/
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
+        logo: '/.github/assets/logo.png',
         nav: [
             {text: '首页', link: '/'},
-            {text: 'Examples', link: '/markdown-examples'}
+            {text: '文档', link: '/quickstart/install'},
+            {text: '支持', link: '/support'},
+            {text: '🔥证书', link: '/cert'},
+            {text: '关于', link: '/about'},
         ],
         sidebar: [
             {
-                text: 'Examples',
+                text: '快速上手',
+                collapsed: true,
                 items: [
-                    {text: 'Markdown Examples', link: '/markdown-examples'},
-                    {text: 'Runtime API Examples', link: '/api-examples'}
+                    {
+                        text: '安装',
+                        link: '/quickstart/install'
+                    },
+                ],
+            },
+            {
+                text: '深入了解',
+                collapsed: true,
+                items: [],
+            },
+            {
+                text: '版本日志',
+                collapsed: true,
+                items: [
+                    ...versions.map(version => {
+                        return {
+                            text: version,
+                            link: `/version-${version}`
+                        }
+                    })
                 ]
             }
         ],
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+            {icon: 'github', link: 'https://github.com/TheTNB/panel'},
+            {icon: 'tencentqq', link: 'https://jq.qq.com/?_wv=1027&k=I1oJKSTH'},
+            {icon: 'wechat', link: 'https://work.weixin.qq.com/gm/d8ebf618553398d454e3378695c858b6'},
         ],
         footer: {
             message: '<b style="font-size: larger; padding-bottom: 20px">严禁使用耗子面板从事违法活动，我司拒绝对违规使用的用户提供任何服务</b>',
             copyright: '© 2022-2024 天津耗子科技有限公司 版权所有丨<a target="_blank" href="https://beian.miit.gov.cn/" rel="noreferrer">津ICP备2022009678号-1</a>丨<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=12011502000848" rel="noreferrer">津公网安备12011502000848号</a>'
+        },
+        editLink: {
+            pattern: "https://github.com/ratpanel/ratpanel.github.io/edit/main/src/:path",
+            text: "在 GitHub 上编辑此页面"
         },
         search: {
             provider: 'local',
@@ -72,5 +111,5 @@ export default defineConfig({
                 }
             }
         }
-    }
+    },
 })

@@ -13,10 +13,10 @@ hero:
       target: _blank
     - theme: alt
       text: 快速安装
-      link: /install
+      link: /quickstart/install
     - theme: alt
-      text: 浏览文档
-      link: /docs
+      text: 进阶手册
+      link: /advanced/index
 
 features:
   - icon: ✨
