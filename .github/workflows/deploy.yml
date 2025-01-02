@@ -1,6 +1,9 @@
 name: Deploy site to Pages
 
 on:
+  schedule:
+    - cron: "0 * * * *"
+
   push:
     branches: [ main ]
 
