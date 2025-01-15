@@ -63,6 +63,9 @@ features:
     <a href="https://scdn.ddunyun.com/">
       <img width="160" src="/.github/assets/ddunyun.png" alt="盾云SCDN" style="padding: 1rem;">
     </a>
+    <a href="https://hongtoutong.com/">
+      <img width="160" src="/.github/assets/htt.png" alt="红透通" style="padding: 1rem;">
+    </a>
     <a href="https://1ms.run" style="padding: 1rem;">
       <img width="160" src="/.github/assets/1ms.svg" alt="毫秒镜像提供经过审核的 Docker 镜像加速服务">
     </a>
