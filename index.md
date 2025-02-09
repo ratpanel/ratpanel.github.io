@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "耗子面板"
   text: "简单轻量 • 高效运维"
-  tagline: 企业级服务器运维管理面板
+  tagline: 全能服务器运维管理面板
   actions:
     - theme: brand
       text: 🌟 点亮 Star
