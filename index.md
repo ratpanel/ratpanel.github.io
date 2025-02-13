@@ -54,7 +54,7 @@ features:
     <a href="https://su.sctes.com/register?code=8st689ujpmm2p" style="padding: 1rem;">
       <img width="160" src="/.github/assets/sctes.png" alt="无畏云加速">
     </a>
-    <a href="https://su.sctes.com/register?code=8st689ujpmm2p">
+    <a href="https://waf.pro/">
       <img width="160" src="/.github/assets/wafpro.png" alt="WAFPRO" style="padding: 1rem;">
     </a>
     <a href="https://scdn.ddunyun.com/">
