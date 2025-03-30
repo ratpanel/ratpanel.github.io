@@ -81,6 +81,10 @@ export default defineConfig({
                         link: '/advanced/proxy'
                     },
                     {
+                        text: '配置进程守护',
+                        link: '/advanced/supervisor'
+                    },
+                    {
                         text: '配置 QUIC（HTTP3）',
                         link: '/advanced/quic'
                     },
