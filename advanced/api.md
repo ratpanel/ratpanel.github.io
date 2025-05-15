@@ -131,7 +131,7 @@ func SignReq(req *http.Request, id uint, token string) error {
         req.Body = io.NopCloser(bytes.NewReader(body))
     }
 
-    // 去除访问入口部分，只保留 /api 开始的路径
+    // 规范化路径
     canonicalPath := req.URL.Path
     if !strings.HasPrefix(canonicalPath, "/api") {
         index := strings.Index(canonicalPath, "/api")
@@ -193,7 +193,7 @@ function signRequest($method, $url, $body, $id, $token) {
     $path = $parsedUrl['path'];
     $query = isset($parsedUrl['query']) ? $parsedUrl['query'] : '';
     
-    // 规范化路径（确保使用/api��径）
+    // 规范化路径
     $canonicalPath = $path;
     if (strpos($path, '/api') !== 0) {
         $apiPos = strpos($path, '/api');
@@ -359,6 +359,273 @@ response = requests.request(
 # 输出结果
 print(f"响应状态码: {response.status_code}")
 print(f"响应内容: {response.text}")
+```
+
+## Java 示例
+
+```java
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.time.Instant;
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import java.util.Base64;
+
+/**
+ * 耗子面板 API 请求示例 (Java)
+ */
+public class RatPanelApiExample {
+
+    public static void main(String[] args) {
+        try {
+            // 示例请求
+            String apiUrl = "http://example.com/entrance/api/user/info";
+            String method = "GET";
+            String body = ""; // 对于GET请求，通常没有请求体
+            int id = 16;
+            String token = "YourSecretToken";
+
+            // 生成签名信息
+            SigningData signingData = signRequest(method, apiUrl, body, id, token);
+
+            // 准备HTTP请求
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest.Builder requestBuilder = HttpRequest.newBuilder()
+                    .uri(URI.create(apiUrl))
+                    .header("Content-Type", "application/json")
+                    .header("X-Timestamp", String.valueOf(signingData.timestamp))
+                    .header("Authorization", "HMAC-SHA256 Credential=" + signingData.id + 
+                            ", Signature=" + signingData.signature);
+
+            // 设置请求方法和请求体
+            if (method.equals("GET")) {
+                requestBuilder.GET();
+            } else {
+                requestBuilder.method(method, HttpRequest.BodyPublishers.ofString(body));
+            }
+
+            HttpRequest request = requestBuilder.build();
+
+            // 发送请求
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+            // 输出结果
+            System.out.println("响应状态码: " + response.statusCode());
+            System.out.println("响应内容: " + response.body());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    static class SigningData {
+        long timestamp;
+        String signature;
+        int id;
+
+        SigningData(long timestamp, String signature, int id) {
+            this.timestamp = timestamp;
+            this.signature = signature;
+            this.id = id;
+        }
+    }
+
+    public static SigningData signRequest(String method, String url, String body, int id, String token) throws Exception {
+        // 解析URL
+        URI uri = new URI(url);
+        String path = uri.getPath();
+        String query = uri.getQuery() != null ? uri.getQuery() : "";
+        
+        // 规范化路径
+        String canonicalPath = path;
+        if (!path.startsWith("/api")) {
+            int apiPos = path.indexOf("/api");
+            if (apiPos != -1) {
+                canonicalPath = path.substring(apiPos);
+            }
+        }
+        
+        // 计算请求体的SHA256哈希值
+        String bodySha256 = sha256Hash(body != null ? body : "");
+        
+        // 构造规范化请求
+        String canonicalRequest = String.join("\n", 
+                method,
+                canonicalPath,
+                query,
+                bodySha256);
+        
+        // 获取当前时间戳
+        long timestamp = Instant.now().getEpochSecond();
+        
+        // 构造待签名字符串
+        String stringToSign = String.join("\n",
+                "HMAC-SHA256",
+                String.valueOf(timestamp),
+                sha256Hash(canonicalRequest));
+        
+        // 计算签名
+        String signature = hmacSha256(token, stringToSign);
+        
+        // 返回签名和时间戳
+        return new SigningData(timestamp, signature, id);
+    }
+    
+    private static String sha256Hash(String text) throws Exception {
+        MessageDigest digest = MessageDigest.getInstance("SHA-256");
+        byte[] hash = digest.digest(text.getBytes(StandardCharsets.UTF_8));
+        return bytesToHex(hash);
+    }
+    
+    private static String hmacSha256(String key, String message) throws Exception {
+        Mac mac = Mac.getInstance("HmacSHA256");
+        SecretKeySpec secretKeySpec = new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8), "HmacSHA256");
+        mac.init(secretKeySpec);
+        byte[] hash = mac.doFinal(message.getBytes(StandardCharsets.UTF_8));
+        return bytesToHex(hash);
+    }
+    
+    private static String bytesToHex(byte[] bytes) {
+        StringBuilder hexString = new StringBuilder();
+        for (byte b : bytes) {
+            String hex = Integer.toHexString(0xff & b);
+            if (hex.length() == 1) {
+                hexString.append('0');
+            }
+            hexString.append(hex);
+        }
+        return hexString.toString();
+    }
+}
+```
+
+## Node.js 示例
+
+```javascript
+const crypto = require('crypto');
+const axios = require('axios');
+const url = require('url');
+
+/**
+ * 计算字符串的SHA256哈希值
+ * @param {string} text 待哈希的字符串
+ * @returns {string} 哈希结果（十六进制）
+ */
+function sha256Hash(text) {
+  return crypto.createHash('sha256').update(text || '').digest('hex');
+}
+
+/**
+ * 使用HMAC-SHA256算法计算签名
+ * @param {string} key 密钥
+ * @param {string} message 待签名的消息
+ * @returns {string} 签名结果（十六进制）
+ */
+function hmacSha256(key, message) {
+  return crypto.createHmac('sha256', key).update(message).digest('hex');
+}
+
+/**
+ * 为API请求生成签名
+ * @param {string} method HTTP方法
+ * @param {string} apiUrl API地址
+ * @param {string} body 请求体
+ * @param {number} id 用户ID
+ * @param {string} token 密钥
+ * @returns {object} 包含签名、时间戳和ID的对象
+ */
+function signRequest(method, apiUrl, body, id, token) {
+  // 解析URL
+  const parsedUrl = new url.URL(apiUrl);
+  const path = parsedUrl.pathname;
+  const query = parsedUrl.search.slice(1); // 移除开头的'?'
+  
+  // 规范化路径
+  let canonicalPath = path;
+  if (!path.startsWith('/api')) {
+    const apiPos = path.indexOf('/api');
+    if (apiPos !== -1) {
+      canonicalPath = path.slice(apiPos);
+    }
+  }
+  
+  // 构造规范化请求
+  const canonicalRequest = [
+    method,
+    canonicalPath,
+    query,
+    sha256Hash(body || '')
+  ].join('\n');
+  
+  // 获取当前时间戳
+  const timestamp = Math.floor(Date.now() / 1000);
+  
+  // 构造待签名字符串
+  const stringToSign = [
+    'HMAC-SHA256',
+    timestamp,
+    sha256Hash(canonicalRequest)
+  ].join('\n');
+  
+  // 计算签名
+  const signature = hmacSha256(token, stringToSign);
+  
+  return {
+    timestamp,
+    signature,
+    id
+  };
+}
+
+/**
+ * 发送API请求
+ */
+async function sendApiRequest() {
+  // 示例请求参数
+  const apiUrl = 'http://example.com/entrance/api/user/info';
+  const method = 'GET';
+  const body = ''; // GET请求通常没有请求体
+  const id = 16;
+  const token = 'YourSecretToken';
+  
+  try {
+    // 生成签名信息
+    const signingData = signRequest(method, apiUrl, body, id, token);
+    
+    // 准备HTTP请求头
+    const headers = {
+      'Content-Type': 'application/json',
+      'X-Timestamp': signingData.timestamp,
+      'Authorization': `HMAC-SHA256 Credential=${signingData.id}, Signature=${signingData.signature}`
+    };
+    
+    // 发送请求
+    const response = await axios({
+      method,
+      url: apiUrl,
+      headers,
+      data: body || undefined
+    });
+    
+    // 输出结果
+    console.log(`响应状态码: ${response.status}`);
+    console.log(`响应内容: ${JSON.stringify(response.data)}`);
+    
+  } catch (error) {
+    console.error('请求出错:', error.message);
+    if (error.response) {
+      console.error(`响应状态码: ${error.response.status}`);
+      console.error(`响应内容: ${JSON.stringify(error.response.data)}`);
+    }
+  }
+}
+
+// 执行请求
+sendApiRequest();
 ```
 
 ## 常见响应码
