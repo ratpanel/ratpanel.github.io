@@ -59,9 +59,7 @@ HTTP方法
 Authorization: HMAC-SHA256 Credential={id}, Signature={signature}
 ```
 
-## 请求示例
-
-### Go 语言示例
+## Go 示例
 
 ```go
 package main
@@ -179,7 +177,7 @@ func HMACSHA256(data string, secret string) string {
 }
 ```
 
-### PHP 示例
+## PHP 示例
 
 ```php
 <?php
@@ -271,7 +269,7 @@ echo "响应状态码: " . $statusCode . PHP_EOL;
 echo "响应内容: " . $response . PHP_EOL;
 ```
 
-### Python 示例
+## Python 示例
 
 ```python
 import hashlib
