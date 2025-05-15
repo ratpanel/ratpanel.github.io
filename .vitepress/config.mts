@@ -73,6 +73,10 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                     {
+                        text: '面板 API',
+                        link: '/advanced/api'
+                    },
+                    {
                         text: '配置容器镜像加速',
                         link: '/advanced/hub-mirror'
                     },
