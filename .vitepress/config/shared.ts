@@ -27,7 +27,7 @@ export const shared = defineConfig({
             md.use(groupIconMdPlugin);
             md.use(timeline);
         },
-        languages: ['go', 'bash', 'shell']
+        languages: ['go', 'bash', 'shell', 'nginx', 'ini', 'docker', 'dockerfile', 'json', 'yml', 'yaml']
     },
 
     themeConfig: {

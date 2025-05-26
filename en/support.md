@@ -14,8 +14,7 @@ We provide a free forum service where you can ask questions, discuss, and share 
 
 ## Paid Remote Service
 
-Website errors, slow speed, malware infections? High server resource usage, configuration optimization, intrusion
-tracing? We provide all these services in one place.
+Website errors, slow speed, malware infections? High server resource usage, configuration optimization, intrusion tracing? We provide all these services in one place.
 
 ### Remote Service Price List
 

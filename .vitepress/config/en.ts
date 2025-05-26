@@ -1,4 +1,4 @@
-import {defineConfig, type DefaultTheme} from 'vitepress'
+import {type DefaultTheme, defineConfig} from 'vitepress'
 
 const resp = await (await fetch('https://panel.haozi.net/api/versions')).json()
 const versions = resp.data.slice(0, 10).map((item: any) => {
@@ -7,7 +7,8 @@ const versions = resp.data.slice(0, 10).map((item: any) => {
 
 export const config = defineConfig({
     lang: 'en-US',
-    description: "Goravel is a web application framework with complete functions and excellent scalability. As a starting scaffolding to help Gopher quickly build their own applications.",
+    title: 'RatPanel',
+    description: "Simple · lightweight · efficient",
 
     themeConfig: {
         nav: nav(),
@@ -15,12 +16,12 @@ export const config = defineConfig({
         sidebar: [
             {
                 text: "Quickstart",
-                base: '/quickstart/',
+                base: '/quickstart',
                 items: sidebarQuickstart()
             },
             {
                 text: "Advanced",
-                base: '/advanced/',
+                base: '/advanced',
                 items: sidebarAdvanced()
             },
             {
@@ -42,7 +43,7 @@ export const config = defineConfig({
             text: 'Edit this page on GitHub'
         },
         footer: {
-            message: 'Released under the MIT License',
+            message: '<b style="font-size: larger">It is strictly forbidden to use Rat Panel for illegal activities, and our company does not provide any services to violators</b>',
             copyright: `Copyright © 2022-${new Date().getFullYear()} Tianjin Rat Technology Co., Ltd All Rights Reserved`
         },
         docFooter: {

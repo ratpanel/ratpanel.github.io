@@ -1,13 +1,10 @@
 # Install Panel
 
-The Panel supports mainstream systems under `amd64` | `arm64` architectures. LNMP environment installation has been
-tested on all systems listed in the table below.
+The Panel supports mainstream systems under `amd64` | `arm64` architectures. LNMP environment installation has been tested on all systems listed in the table below.
 
-It is recommended to use systems marked as **recommended**. Unless there are special circumstances, it is not
-recommended to use systems marked as **not recommended**.
+It is recommended to use systems marked as **recommended**. Unless there are special circumstances, it is not recommended to use systems marked as **not recommended**.
 
-For systems not listed in the table below, you can try installing on your own, but no free technical support will be
-provided.
+For systems not listed in the table below, you can try installing on your own, but no free technical support will be provided.
 
 | System              | Version | Note            |
 |---------------------|---------|-----------------|
@@ -28,8 +25,7 @@ provided.
 | Anolis              | 8       | Not Recommended |
 | openEuler           | 22      | Not Recommended |
 
-As system versions continue to update, we may also terminate support for some overly outdated systems to ensure the
-robustness of the Panel.
+As system versions continue to update, we may also terminate support for some overly outdated systems to ensure the robustness of the Panel.
 
 ## Start Installation
 

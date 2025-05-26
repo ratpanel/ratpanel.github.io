@@ -30,10 +30,7 @@ const members = [
 
 # About
 
-## About RatPanel
-
-RatPanel is a professional server operation and maintenance management panel dedicated to providing users with simple,
-efficient, and secure server management solutions.
+RatPanel is a professional server operation and maintenance management panel dedicated to providing users with simple, efficient, and secure server management solutions.
 
 | Vision                                                   | Mission                                     | Values                                            |
 |----------------------------------------------------------|---------------------------------------------|---------------------------------------------------|

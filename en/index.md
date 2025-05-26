@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
@@ -13,10 +12,7 @@ hero:
       target: _blank
     - theme: alt
       text: Quick install
-      link: /install
-    - theme: alt
-      text: Browse docs
-      link: /docs
+      link: /quickstart/install
 
 features:
   - icon: ✨

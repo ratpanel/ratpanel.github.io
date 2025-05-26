@@ -1,7 +1,6 @@
 # Configure Container Image Acceleration
 
-Due to certain reasons, domestic users in China may be unable to connect to Docker Hub to pull container images, thus
-requiring image acceleration configuration.
+Due to certain reasons, domestic users in China may be unable to connect to Docker Hub to pull container images, thus requiring image acceleration configuration.
 
 ## For Podman
 
@@ -16,8 +15,7 @@ location = "docker.io"
 location = "docker.1ms.run"
 ```
 
-Where docker.1ms.run is the configured image acceleration address. You can refer to other tutorials to set up and use
-it.
+Where docker.1ms.run is the configured image acceleration address. You can refer to other tutorials to set up and use it.
 
 ## For Docker
 
@@ -31,5 +29,4 @@ Add the following configuration and save:
 }
 ```
 
-Where https://docker.1ms.run is the configured image acceleration address. You can refer to other tutorials to set up
-and use it.
+Where https://docker.1ms.run is the configured image acceleration address. You can refer to other tutorials to set up and use it.

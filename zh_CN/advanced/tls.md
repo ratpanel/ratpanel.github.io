@@ -1,8 +1,8 @@
-# Configure TLSv1.1 TLSv1
+# 配置 TLSv1.1 TLSv1
 
-The current Panel OpenResty is compiled with OpenSSL 3.5, which by default disables the deprecated TLSv1.1 and TLSv1 protocols.
+当前面板OpenResty使用OpenSSL 3.0版本编译，默认禁用已弃用的TLSv1.1 TLSv1协议。
 
-Of course, if your business must use these two protocols, you can enable them using the SSL configuration below.
+当然，如果你的业务必须要使用这两个协议的话，可以使用下述SSL配置启用。
 
 ```
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;

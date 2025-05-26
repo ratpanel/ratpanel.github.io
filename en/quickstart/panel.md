@@ -18,12 +18,10 @@ Follow the prompts to complete the necessary commands for operation.
 
 It is primarily recommended to back up data and reinstall the system, as this ensures a clean system.
 
-If you are unable to reinstall the system, please log in to the server as `root` user and execute the following command
-to uninstall the Panel:
+If you are unable to reinstall the system, please log in to the server as `root` user and execute the following command to uninstall the Panel:
 
 ```shell
 curl -fsLm 10 -o uninstall.sh https://dl.cdn.haozi.net/panel/uninstall.sh && bash uninstall.sh
 ```
 
-Before uninstalling the Panel, be sure to back up all data and uninstall all Panel applications in advance. Data will be
-**unrecoverable** after uninstallation!
+Before uninstalling the Panel, be sure to back up all data and uninstall all Panel applications in advance. Data will be **unrecoverable** after uninstallation!
