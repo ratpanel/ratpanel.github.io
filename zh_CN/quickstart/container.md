@@ -4,7 +4,7 @@
 
 容器引擎安装完毕后，即可前往面板容器管理处创建容器（此处以 pgadmin4 为例）。
 
-首先导航到镜像选项卡拉取需要的镜像，视网络环境可能需要数分钟到数十分钟。
+First, navigate to the Images tab to pull the required images. This may take several minutes to tens of minutes depending on your network environment.
 
 ![拉取镜像](/container1.png)
 
@@ -12,13 +12,14 @@
 
 ![创建容器](/container2.png)
 
-表单内容按容器的说明填写，此处使用的 pgadmin4 镜像需要映射 80 端口及配置 2 个默认环境变量，无需映射目录。
+Fill in the form according to the container's instructions. The pgadmin4 image used here needs to map port 80 and configure 2 default environment variables, with no need to map directories.
 
 容器创建完成后可点击右上角刷新按钮和容器右侧的日志按钮检查是否正常启动。
 
 ![容器启动](/container3.png)
 
-若容器未能启动，请根据日志进行修正。
-如果映射了外部端口，需要到防火墙菜单放行相应的端口。
+If the container fails to start, please make corrections according to the logs.
+
+If you have mapped external ports, you need to go to the firewall menu to allow the corresponding ports.
 
 ![创建成功](/container4.png)
