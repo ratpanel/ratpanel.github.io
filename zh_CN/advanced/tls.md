@@ -1,8 +1,8 @@
 # 配置 TLSv1.1 TLSv1
 
-当前面板OpenResty使用OpenSSL 3.0版本编译，默认禁用已弃用的TLSv1.1 TLSv1协议。
+当前面板 OpenResty 使用 OpenSSL 3.5 版本编译，默认禁用已弃用的 TLSv1.1 TLSv1 协议。
 
-当然，如果你的业务必须要使用这两个协议的话，可以使用下述SSL配置启用。
+当然，如果你的业务必须要使用这两个协议的话，可以使用下述 SSL 配置启用。
 
 ```
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
