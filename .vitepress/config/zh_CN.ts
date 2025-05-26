@@ -1,133 +1,117 @@
-import {type DefaultTheme, defineConfig} from 'vitepress';
-
-const resp = await (await fetch('https://panel.haozi.net/api/versions')).json()
+import { type DefaultTheme, defineConfig } from 'vitepress';
+const resp = await (await fetch('https://panel.haozi.net/api/versions')).json();
 const versions = resp.data.slice(0, 10).map((item: any) => {
-    return item.version
-})
-export const config = defineConfig({
-    lang: "zh-CN",
-    title: "耗子面板",
-    description: "简单轻量 • 高效运维",
-    themeConfig: {
-        nav: nav(),
-
-        sidebar: [
-            {
-                text: "快速开始",
-                base: '/zh_CN/quickstart',
-                items: sidebarQuickstart()
-            },
-            {
-                text: "进阶指南",
-                base: '/zh_CN/advanced',
-                items: sidebarAdvanced()
-            },
-            {
-                text: "版本历史",
-                base: '/zh_CN',
-                collapsed: true,
-                items: [
-                    ...versions.map((version: string) => {
-                        return {
-                            text: version,
-                            link: `/version-${version}`
-                        }
-                    })
-                ]
-            },
-        ],
-        editLink: {
-            pattern: 'https://github.com/ratpanel/ratpanel.github.io/edit/main/:path',
-            text: "在 GitHub 上编辑此页面"
-        },
-        footer: {
-            message: '<b style="font-size: larger">严禁使用耗子面板从事违法活动，我司不对违规用户提供任何服务</b>',
-            copyright: `© 2022-${new Date().getFullYear()} 天津耗子科技有限公司 版权所有丨<a target="_blank" href="https://beian.miit.gov.cn/" rel="noreferrer">津ICP备2022009678号-1</a>丨<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=12011502000848" rel="noreferrer">津公网安备12011502000848号</a>`
-        },
-        docFooter: {
-            prev: "上一页",
-            next: "下一页"
-        },
-        outline: {
-            label: "页面导航"
-        },
-        lastUpdated: {
-            text: "最后更新于",
-            formatOptions: {
-                dateStyle: 'short',
-                timeStyle: 'medium'
-            }
-        },
-        langMenuLabel: "切换语言",
-        returnToTopLabel: "回到顶部",
-        sidebarMenuLabel: "菜单",
-        darkModeSwitchLabel: "主题",
-        lightModeSwitchTitle: "切换到浅色主题",
-        darkModeSwitchTitle: "切换到深色主题",
-        skipToContentLabel: "跳转到内容"
-    }
+  return item.version;
 });
-
+export const config = defineConfig({
+  lang: "zh-CN",
+  title: "耗子面板",
+  description: "简单轻量 • 高效运维",
+  themeConfig: {
+    nav: nav(),
+    sidebar: [{
+      text: "快速开始",
+      base: "/zh_CN/quickstart",
+      items: sidebarQuickstart()
+    }, {
+      text: "进阶指南",
+      base: "/zh_CN/advanced",
+      items: sidebarAdvanced()
+    }, {
+      text: "版本历史",
+      collapsed: true,
+      items: [...versions.map((version: string) => {
+        return {
+          text: version,
+          link: `/version-${version}`
+        };
+      })]
+    }],
+    editLink: {
+      pattern: 'https://github.com/ratpanel/ratpanel.github.io/edit/main/:path',
+      text: "在 GitHub 上编辑此页面"
+    },
+    footer: {
+      message: "<b style=\"font-size: larger\">严禁使用耗子面板从事违法活动，我司不对违规用户提供任何服务</b>",
+      copyright: `© 2022-${new Date().getFullYear()} 天津耗子科技有限公司 版权所有丨<a target="_blank" href="https://beian.miit.gov.cn/" rel="noreferrer">津ICP备2022009678号-1</a>丨<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=12011502000848" rel="noreferrer">津公网安备12011502000848号</a>`
+    },
+    docFooter: {
+      prev: "上一页",
+      next: "下一页"
+    },
+    outline: {
+      label: "页面导航"
+    },
+    lastUpdated: {
+      text: "最后更新于",
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+    langMenuLabel: "切换语言",
+    returnToTopLabel: "回到顶部",
+    sidebarMenuLabel: "菜单",
+    darkModeSwitchLabel: "主题",
+    lightModeSwitchTitle: "切换到浅色主题",
+    darkModeSwitchTitle: "切换到深色主题",
+    skipToContentLabel: "跳转到内容"
+  }
+});
 function nav(): DefaultTheme.NavItem[] {
-    return [
-        {text: '首页', link: '/zh_CN/'},
-        {text: '文档', link: '/zh_CN/quickstart/install'},
-        {text: '支持', link: '/zh_CN/support'},
-        {text: '🔥证书', link: '/zh_CN/cert'},
-        {text: '关于', link: '/zh_CN/about'},
-    ]
+  return [{
+    text: "首页",
+    link: "/zh_CN/"
+  }, {
+    text: "文档",
+    link: "/zh_CN/quickstart/install"
+  }, {
+    text: "支持",
+    link: "/zh_CN/support"
+  }, {
+    text: "🔥证书",
+    link: "/zh_CN/cert"
+  }, {
+    text: "关于",
+    link: "/zh_CN/about"
+  }];
 }
-
 function sidebarQuickstart(): DefaultTheme.SidebarItem[] {
-    return [
-        {
-            text: '安装面板',
-            link: '/install'
-        },
-        {
-            text: '挂载分区',
-            link: '/disk'
-        },
-        {
-            text: '管理面板',
-            link: '/panel'
-        },
-        {
-            text: '管理容器',
-            link: '/container'
-        },
-    ]
+  return [{
+    text: "安装面板",
+    link: '/install'
+  }, {
+    text: "挂载分区",
+    link: '/disk'
+  }, {
+    text: "管理面板",
+    link: '/panel'
+  }, {
+    text: "管理容器",
+    link: '/container'
+  }];
 }
-
 function sidebarAdvanced(): DefaultTheme.SidebarItem[] {
-    return [
-        {
-            text: '面板 API',
-            link: '/api'
-        },
-        {
-            text: '配置容器镜像加速',
-            link: '/hub-mirror'
-        },
-        {
-            text: '配置反向代理',
-            link: '/proxy'
-        },
-        {
-            text: '配置进程守护',
-            link: '/supervisor'
-        },
-        {
-            text: '配置 QUIC（HTTP3）',
-            link: '/quic'
-        },
-        {
-            text: '配置 TLSv1.1 TLSv1',
-            link: '/tls'
-        },
-        {
-            text: '安全性建议',
-            link: '/safe'
-        },
-    ]
+  return [{
+    text: "面板 API",
+    link: '/api'
+  }, {
+    text: "配置容器镜像加速",
+    link: '/hub-mirror'
+  }, {
+    text: "配置反向代理",
+    link: '/proxy'
+  }, {
+    text: "配置进程守护",
+    link: '/supervisor'
+  }, {
+    text: "配置 QUIC（HTTP3）",
+    link: '/quic'
+  }, {
+    text: "配置 TLSv1.1 TLSv1",
+    link: '/tls'
+  }, {
+    text: "安全性建议",
+    link: '/safe'
+  }];
 }
