@@ -6,7 +6,7 @@ next: false
 
 # 证书
 
-若 3 个月免费证书无法满足您的需求，您可以选择购买更高级别的证书。我们提供 DV 单域名证书和 DV 通配符证书可供选择。
+If the 3-month free certificate cannot meet your needs, you can choose to purchase higher-level certificates. 若 3 个月免费证书无法满足您的需求，您可以选择购买更高级别的证书。我们提供 DV 单域名证书和 DV 通配符证书可供选择。
 
 受限价政策，具体价格及购买请直接通过右上角加群联系销售。
 
@@ -129,24 +129,19 @@ next: false
     <div class="cert-subtitle">国际知名品牌证书</div>
     <div class="cert-price">¥ 1X<span>/年</span></div>
     <div class="cert-features">
-      <div class="cert-feature-item">
-        <span class="cert-check-icon">✓</span>
+      <div class="cert-feature-item"><span class="cert-check-icon">✓</span>
         <span>域名型证书（DV）</span>
       </div>
-      <div class="cert-feature-item">
-        <span class="cert-check-icon">✓</span>
+      <div class="cert-feature-item"><span class="cert-check-icon">✓</span>
         <span>支持一个域名</span>
       </div>
-      <div class="cert-feature-item">
-        <span class="cert-check-icon">✓</span>
+      <div class="cert-feature-item"><span class="cert-check-icon">✓</span>
         <span>一年有效期</span>
       </div>
-      <div class="cert-feature-item">
-        <span class="cert-check-icon">✓</span>
+      <div class="cert-feature-item"><span class="cert-check-icon">✓</span>
         <span>快速颁发</span>
       </div>
-    </div>
-    <button class="cert-buy-button">右上角联系销售购买</button>
+    </div><button class="cert-buy-button">右上角联系销售购买</button>
   </div>
   <div class="cert-card">
     <div class="cert-card-header">
@@ -155,24 +150,19 @@ next: false
     <div class="cert-subtitle">国际知名品牌证书</div>
     <div class="cert-price">¥ 1XX<span>/年</span></div>
     <div class="cert-features">
-      <div class="cert-feature-item">
-        <span class="cert-check-icon">✓</span>
+      <div class="cert-feature-item"><span class="cert-check-icon">✓</span>
         <span>域名型证书（DV）</span>
       </div>
-      <div class="cert-feature-item">
-        <span class="cert-check-icon">✓</span>
+      <div class="cert-feature-item"><span class="cert-check-icon">✓</span>
         <span>通配所有子域</span>
       </div>
-      <div class="cert-feature-item">
-        <span class="cert-check-icon">✓</span>
+      <div class="cert-feature-item"><span class="cert-check-icon">✓</span>
         <span>一年有效期</span>
       </div>
-      <div class="cert-feature-item">
-        <span class="cert-check-icon">✓</span>
+      <div class="cert-feature-item"><span class="cert-check-icon">✓</span>
         <span>快速颁发</span>
       </div>
-    </div>
-    <button class="cert-buy-button">右上角联系销售购买</button>
+    </div><button class="cert-buy-button">右上角联系销售购买</button>
   </div>
 </div>
 
