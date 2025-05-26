@@ -16,7 +16,7 @@ panel-cli
 
 ## 卸载面板
 
-It is primarily recommended to back up data and reinstall the system, as this ensures a clean system.
+优先建议备份数据重装系统，这样可以保证系统纯净。
 
 如果您无法重装系统，请以`root`用户登录服务器，执行以下命令卸载面板：
 
@@ -24,4 +24,4 @@ It is primarily recommended to back up data and reinstall the system, as this en
 curl -fsLm 10 -o uninstall.sh https://dl.cdn.haozi.net/panel/uninstall.sh && bash uninstall.sh
 ```
 
-卸载面板前请务必备份好所有数据，提前卸载面板全部应用。卸载后数据将**无法恢复**！ Data will be **unrecoverable** after uninstallation!
+卸载面板前请务必备份好所有数据，提前卸载面板全部应用。 卸载后数据将**无法恢复**！
