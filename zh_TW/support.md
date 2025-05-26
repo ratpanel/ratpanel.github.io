@@ -10,7 +10,7 @@ next: false
 
 We provide a free forum service where you can ask questions, discuss, and share issues related to using the Panel.
 
-- [Moe Tom](https://tom.moe)
+- [Moe Tom](https://tom.moe/c/technical/ratpanel)
 
 ## Paid Remote Service
 
