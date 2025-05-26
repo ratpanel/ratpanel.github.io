@@ -30,7 +30,7 @@ const members = [
 
 # 关于
 
-RatPanel is a professional server operation and maintenance management panel dedicated to providing users with simple, efficient, and secure server management solutions.
+耗子面板是一款专业的服务器运维管理面板，致力于为用户提供简单、高效、安全的服务器管理解决方案。
 
 | 愿景                | 使命            | 价值观            |
 | ----------------- | ------------- | -------------- |
@@ -56,9 +56,9 @@ RatPanel is a professional server operation and maintenance management panel ded
 
 ## 联系我们
 
-| 名称          | 联系方式                                                                                       |
-| ----------- | ------------------------------------------------------------------------------------------ |
-| WeChat Work | [点击联系](https://work.weixin.qq.com/kfid/kfc20ea8e38b5a4e73a)                                |
-| QQ          | [826896000](https://wpa.qq.com/msgrd?v=3&uin=826896000&site=qq&menu=yes) |
-| 电子邮件        | [admin@haozi.net](mailto:admin@haozi.net)                     |
-| 公司地址        | 天津市武清区黄庄街道泉里路1号智库大厦206室                                                                    |
+| 名称   | 联系方式                                                                                       |
+| ---- | ------------------------------------------------------------------------------------------ |
+| 企业微信 | [点击联系](https://work.weixin.qq.com/kfid/kfc20ea8e38b5a4e73a)                                |
+| QQ   | [826896000](https://wpa.qq.com/msgrd?v=3&uin=826896000&site=qq&menu=yes) |
+| 电子邮件 | [admin@haozi.net](mailto:admin@haozi.net)                     |
+| 公司地址 | 天津市武清区黄庄街道泉里路1号智库大厦206室                                                                    |
