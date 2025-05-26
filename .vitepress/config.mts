@@ -116,7 +116,7 @@ export default defineConfig({
             }
         ],
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/TheTNB/panel'},
+            {icon: 'github', link: 'https://github.com/tnb-labs/panel'},
             {icon: 'tencentqq', link: 'https://jq.qq.com/?_wv=1027&k=I1oJKSTH'},
             {icon: 'wechat', link: 'https://work.weixin.qq.com/gm/d8ebf618553398d454e3378695c858b6'},
         ],

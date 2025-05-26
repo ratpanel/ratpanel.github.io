@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 🌟 点亮 Star
-      link: https://github.com/TheTNB/panel
+      link: https://github.com/tnb-labs/panel
       target: _blank
     - theme: alt
       text: 快速安装
@@ -33,7 +33,7 @@ features:
     details: 支持离线模式，甚至可以在部署完成后停止面板进程，不会对已有服务造成任何影响
   - icon: 🛡
     title: 安全稳定
-    details: 面板采用业界多种技术保障本体安全性，已在我们的多个生存环境中长期稳定运行
+    details: 面板采用业界多种技术保障本体安全性，已在我们的多个生产环境中长期稳定运行
   - icon: 💽
     title: 全面开源
     details: 少有的全开源面板，您可以在遵守开源协议的前提下对面板自由修改、二次开发
@@ -45,14 +45,11 @@ features:
 ## 合作伙伴
 
 <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
-    <a href="https://www.dkdun.cn/aff/MQZZNVHQ" style="padding: 1rem;">
-      <img width="160" src="/.github/assets/dk.png" alt="林枫云">
-    </a>
     <a href="https://www.weixiaoduo.com/" style="padding: 1rem;">
       <img width="160" src="/.github/assets/wxd.png" alt="微晓朵">
     </a>
-    <a href="https://su.sctes.com/register?code=8st689ujpmm2p" style="padding: 1rem;">
-      <img width="160" src="/.github/assets/sctes.png" alt="无畏云加速">
+    <a href="https://www.dkdun.cn/aff/MQZZNVHQ" style="padding: 1rem;">
+      <img width="160" src="/.github/assets/dk.png" alt="林枫云">
     </a>
     <a href="https://waf.pro/">
       <img width="160" src="/.github/assets/wafpro.png" alt="WAFPRO" style="padding: 1rem;">
@@ -60,10 +57,7 @@ features:
     <a href="https://scdn.ddunyun.com/">
       <img width="160" src="/.github/assets/ddunyun.png" alt="盾云SCDN" style="padding: 1rem;">
     </a>
-    <a href="https://hongtoutong.com/">
-      <img width="160" src="/.github/assets/htt.png" alt="红透通" style="padding: 1rem;">
-    </a>
-    <a href="https://1ms.run" style="padding: 1rem;">
-      <img width="160" src="/.github/assets/1ms.svg" alt="毫秒镜像提供经过审核的 Docker 镜像加速服务">
+    <a href="https://1ms.run/" style="padding: 1rem;">
+      <img width="160" src="/.github/assets/1ms.svg" alt="毫秒镜像">
     </a>
 </div>

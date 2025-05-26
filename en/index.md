@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 🌟 Star
-      link: https://github.com/TheTNB/panel
+      link: https://github.com/tnb-labs/panel
       target: _blank
     - theme: alt
       text: Quick install
