@@ -71,30 +71,30 @@ export const config = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
     return [
-        {text: '首页', link: '/'},
-        {text: '文档', link: '/quickstart/install'},
-        {text: '支持', link: '/support'},
-        {text: '🔥证书', link: '/cert'},
-        {text: '关于', link: '/about'},
+        {text: 'Home', link: '/'},
+        {text: 'Document', link: '/quickstart/install'},
+        {text: 'Support', link: '/support'},
+        {text: '🔥Certificate', link: '/cert'},
+        {text: 'About', link: '/about'},
     ]
 }
 
 function sidebarQuickstart(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: '安装面板',
+            text: 'Installing panel',
             link: '/install'
         },
         {
-            text: '挂载分区',
+            text: 'Mounting partition',
             link: '/disk'
         },
         {
-            text: '管理面板',
+            text: 'Managing panel',
             link: '/panel'
         },
         {
-            text: '管理容器',
+            text: 'Managing container',
             link: '/container'
         },
     ]
@@ -103,31 +103,31 @@ function sidebarQuickstart(): DefaultTheme.SidebarItem[] {
 function sidebarAdvanced(): DefaultTheme.SidebarItem[] {
     return [
         {
-            text: '面板 API',
+            text: 'Panel API',
             link: '/api'
         },
         {
-            text: '配置容器镜像加速',
+            text: 'Configure container image acceleration',
             link: '/hub-mirror'
         },
         {
-            text: '配置反向代理',
+            text: 'Configure reverse proxy',
             link: '/proxy'
         },
         {
-            text: '配置进程守护',
+            text: 'Configure process daemon',
             link: '/supervisor'
         },
         {
-            text: '配置 QUIC（HTTP3）',
+            text: 'Configure QUIC (HTTP3)',
             link: '/quic'
         },
         {
-            text: '配置 TLSv1.1 TLSv1',
+            text: 'Configure TLSv1.1 TLSv1',
             link: '/tls'
         },
         {
-            text: '安全性建议',
+            text: 'Security recommendations',
             link: '/safe'
         },
     ]

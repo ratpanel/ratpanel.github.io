@@ -1,14 +1,17 @@
-# 配置 QUIC（HTTP3）
+# Configure QUIC (HTTP3)
 
-面板目前已支持自动 QUIC 配置，但是出于兼容性考虑，默认未添加 `Alt-Svc` 标头，浏览器在未检测到 `Alt-Svc` 标头时不会尝试使用 QUIC 连接。
+RatPanel currently supports automatic QUIC configuration, but for compatibility reasons, the `Alt-Svc` header is not
+added by default. Browsers will not attempt to use QUIC connections without detecting the `Alt-Svc` header.
 
-如果你不使用 CDN，可添加下述配置到网站伪静态中即可让浏览器知晓网站支持并使用 QUIC 连接。
+If you are not using a CDN, you can add the configuration below to your website's rewrite rules to let browsers know
+that the website supports and uses QUIC connections.
 
 ```
 add_header Alt-Svc 'h3=":$server_port"; ma=2592000';
 ```
 
-如果你使用 CDN 或者前端还存在代理服务器，则 QUIC 需要在 CDN / 前端开启。
-如果配置后仍不生效，请检查浏览器版本和 UDP 443 端口的可用性。
+If you are using a CDN or there are proxy servers in front, then QUIC needs to be enabled on the CDN / frontend.
+If the configuration still doesn't work, please check your browser version and the availability of UDP port 443.
 
-* 根据 Nginx 的 git 提交记录，1.25 版本下所有 QUIC 草案版本已经移除，因此 `Alt-Svc` 无需添加草案版本号。
+* According to Nginx's git commit history, all QUIC draft versions have been removed in version 1.25, so there's no need
+  to add draft version numbers to `Alt-Svc`.

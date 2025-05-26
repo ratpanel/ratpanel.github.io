@@ -1,27 +1,29 @@
-# 管理面板
+# Manage Panel
 
-请勿在面板仍有任务运行时操作停止 / 重启面板，否则可能会造成问题。
+Do not stop or restart the Panel while tasks are still running, as this may cause issues.
 
-* 启动面板：`systemctl start panel`
-* 停止面板：`systemctl stop panel`
-* 重启面板：`systemctl restart panel`
+* Start Panel: `systemctl start panel`
+* Stop Panel: `systemctl stop panel`
+* Restart Panel: `systemctl restart panel`
 
-## 面板命令行
+## Panel Command Line
 
 ```bash
 panel-cli
 ```
 
-可根据提示补全需要的命令进行操作。
+Follow the prompts to complete the necessary commands for operation.
 
-## 卸载面板
+## Uninstall Panel
 
-优先建议备份数据重装系统，这样可以保证系统纯净。
+It is primarily recommended to back up data and reinstall the system, as this ensures a clean system.
 
-如果您无法重装系统，请以`root`用户登录服务器，执行以下命令卸载面板：
+If you are unable to reinstall the system, please log in to the server as `root` user and execute the following command
+to uninstall the Panel:
 
 ```shell
 curl -fsLm 10 -o uninstall.sh https://dl.cdn.haozi.net/panel/uninstall.sh && bash uninstall.sh
 ```
 
-卸载面板前请务必备份好所有数据，提前卸载面板全部应用。卸载后数据将**无法恢复**！
+Before uninstalling the Panel, be sure to back up all data and uninstall all Panel applications in advance. Data will be
+**unrecoverable** after uninstallation!

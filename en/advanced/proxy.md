@@ -1,5 +1,7 @@
-# 配置反向代理
+# Configure Reverse Proxy
 
-面板 v2.4.10+ 自带反向代理配置生成器，你可以通过站点伪静态配置页面的右上角打开使用。
+RatPanel v2.4.10+ comes with a built-in reverse proxy configuration generator, which you can access through the top
+right corner of the site rewrite configuration page.
 
-注意：如果设置反向代理后出现 CSS/JS 等静态资源无法正常加载的问题，请移除站点主配置文件中的**不记录静态文件日志**部分。
+Note: If you encounter issues with static resources like CSS/JS not loading properly after setting up a reverse proxy,
+please remove the **Do not log static files** section from the site's main configuration file.

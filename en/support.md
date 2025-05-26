@@ -4,34 +4,35 @@ prev: false
 next: false
 ---
 
-# 支持
+# Support
 
-## 免费论坛服务
+## Free Forum Service
 
-我们提供免费的论坛服务，您可以在论坛中提问、交流、分享面板使用中的问题。
+We provide a free forum service where you can ask questions, discuss, and share issues related to using the Panel.
 
 - [Moe Tom](https://tom.moe)
 
-## 付费远程服务
+## Paid Remote Service
 
-网站报错、速度慢、被挂马？服务器资源占用高、配置调优、入侵朔源？我们统统一站式服务。
+Website errors, slow speed, malware infections? High server resource usage, configuration optimization, intrusion
+tracing? We provide all these services in one place.
 
-### 远程服务价格表
+### Remote Service Price List
 
-远程服务是指我们通过远程协助的方式，帮助您解决问题。
+Remote service refers to our assistance in solving your problems through remote support.
 
-| 名称   | 介绍               | 价格    |
-|------|------------------|-------|
-| 单次服务 | 仅限一次服务，问题解决服务即结束 | ￥50 起 |
+| Service Name   | Description                                                             | Price    |
+|----------------|-------------------------------------------------------------------------|----------|
+| Single Service | Limited to one service session, service ends when the issue is resolved | From ¥50 |
 
-### 服务流程
+### Service Process
 
-1. 提前联系我们，说明问题
-2. 我们评估问题，确认是否可以解决及给出预估价格
-3. 您确认价格后，支付 50% 预付款，服务开始
-4. 服务完成后，您确认无误并支付剩余款项
+1. Contact us in advance and explain the issue
+2. We evaluate the problem, confirm whether it can be resolved, and provide an estimated price
+3. After you confirm the price, pay 50% upfront, and the service begins
+4. After service completion, you confirm everything is in order and pay the remaining amount
 
-## 联系我们
+## Contact Us
 
-- [企业微信](https://work.weixin.qq.com/kfid/kfc20ea8e38b5a4e73a)
+- [WeChat Work](https://work.weixin.qq.com/kfid/kfc20ea8e38b5a4e73a)
 - [QQ 826896000](https://wpa.qq.com/msgrd?v=3&uin=826896000&site=qq&menu=yes)

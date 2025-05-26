@@ -1,5 +1,6 @@
-# 配置进程守护
+# Configure Process Monitoring
 
-1. 安装 Supervisor 管理器并打开。
-2. Supervisor 管理器中创建需要守护的进程（运行用户不建议使用 root）。
-3. 常见问题：[https://tom.moe/t/supervisor/3112](https://tom.moe/t/supervisor/3112)
+1. Install Supervisor manager and open it.
+2. Create processes that need to be monitored in the Supervisor manager (it's not recommended to use root as the running
+   user).
+3. Common issues: [https://tom.moe/t/supervisor/3112](https://tom.moe/t/supervisor/3112)
