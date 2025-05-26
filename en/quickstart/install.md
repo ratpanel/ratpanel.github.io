@@ -29,8 +29,7 @@ As system versions continue to update, we may also terminate support for some ov
 
 ## Start Installation
 
-> If you need to mount partitions, please complete before installing the Panel. Cross-directory migration is not
-> supported after Panel installation.
+> If you need to mount partitions, please complete before installing the Panel. Cross-directory migration is not supported after Panel installation.
 
 Log in to the server as `root` user and run the following command to install the Panel:
 
