@@ -4,7 +4,7 @@
 
 ## 对于 Podman
 
-Open the Podman settings page in the Panel, and navigate to the Registry Configuration tab.
+在面板打开 Podman 设置页面，导航到注册表配置选项卡。
 
 滚动到配置文件底部，添加如下配置并保存：
 
@@ -15,11 +15,11 @@ location = "docker.io"
 location = "docker.1ms.run"
 ```
 
-Where docker.1ms.run is the configured image acceleration address. You can refer to other tutorials to set up and use it.
+其中 docker.1ms.run 为配置的镜像加速地址， 可自行参考其他教程搭建使用。
 
 ## 对于 Docker
 
-Open the Docker settings page in the Panel, and navigate to the Configuration tab.
+在面板打开 Docker 设置页面，导航到配置选项卡。
 
 添加如下配置并保存：
 
@@ -29,4 +29,4 @@ Open the Docker settings page in the Panel, and navigate to the Configuration ta
 }
 ```
 
-其中 docker.1ms.run 为配置的镜像加速地址，可自行参考其他教程搭建使用。 You can refer to other tutorials to set up and use it.
+其中 docker.1ms.run 为配置的镜像加速地址， 可自行参考其他教程搭建使用。
