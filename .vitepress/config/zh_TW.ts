@@ -96,22 +96,10 @@ function sidebarAdvanced(): DefaultTheme.SidebarItem[] {
     text: 'Panel API',
     link: '/api'
   }, {
-    text: 'Configure container image acceleration',
-    link: '/hub-mirror'
-  }, {
-    text: 'Configure reverse proxy',
-    link: '/proxy'
-  }, {
-    text: 'Configure process daemon',
-    link: '/supervisor'
-  }, {
-    text: 'Configure QUIC (HTTP3)',
-    link: '/quic'
-  }, {
-    text: 'Configure TLSv1.1 TLSv1',
-    link: '/tls'
-  }, {
     text: 'Security recommendations',
     link: "/安全"
+  }, {
+    text: 'FAQ',
+    link: '/faq'
   }];
 }
