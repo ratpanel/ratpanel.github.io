@@ -1,3 +1,7 @@
+# Frequently Asked Questions
+
+Here are some common questions and answers about RatPanel. If you have any other questions, please feel free to ask in the [RatPanel Community](https://tom.moe/c/technical/ratpanel). If you find any bugs, please submit a [GitHub Issue](https://github.com/tnb-labs/panel/issues).
+
 ## Configure QUIC (HTTP3)
 
 RatPanel currently supports automatic QUIC configuration, but for compatibility reasons, the `Alt-Svc` header is not added by default. Browsers will not attempt to use QUIC connections without detecting the `Alt-Svc` header.
