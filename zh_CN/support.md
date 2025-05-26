@@ -14,7 +14,7 @@ next: false
 
 ## 付费远程服务
 
-Website errors, slow speed, malware infections? High server resource usage, configuration optimization, intrusion tracing? We provide all these services in one place.
+网站报错、速度慢、被挂马？ 服务器资源占用高、配置调优、入侵朔源？ 我们统统一站式服务。
 
 ### 远程服务价格表
 
