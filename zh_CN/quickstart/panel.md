@@ -14,6 +14,14 @@ panel-cli
 
 可根据提示补全需要的命令进行操作。
 
+For example, to change a user's password, you can use:
+
+```bash
+panel-cli user password haozi 123456
+```
+
+This will change the password for the user `haozi` to `123456`.
+
 ## 卸载面板
 
 优先建议备份数据重装系统，这样可以保证系统纯净。
