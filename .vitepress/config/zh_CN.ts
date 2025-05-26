@@ -99,7 +99,7 @@ function sidebarAdvanced(): DefaultTheme.SidebarItem[] {
     text: "安全性建议",
     link: '/safe'
   }, {
-    text: 'FAQ',
+    text: "常见问题",
     link: '/faq'
   }];
 }
