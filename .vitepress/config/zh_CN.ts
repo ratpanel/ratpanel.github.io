@@ -96,22 +96,10 @@ function sidebarAdvanced(): DefaultTheme.SidebarItem[] {
     text: "面板 API",
     link: '/api'
   }, {
-    text: "配置容器镜像加速",
-    link: '/hub-mirror'
-  }, {
-    text: "配置反向代理",
-    link: '/proxy'
-  }, {
-    text: "配置进程守护",
-    link: '/supervisor'
-  }, {
-    text: "配置 QUIC（HTTP3）",
-    link: '/quic'
-  }, {
-    text: "配置 TLSv1.1 TLSv1",
-    link: '/tls'
-  }, {
     text: "安全性建议",
     link: '/safe'
+  }, {
+    text: 'FAQ',
+    link: '/faq'
   }];
 }
