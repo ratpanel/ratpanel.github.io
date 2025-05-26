@@ -1,6 +1,5 @@
 ---
 layout: home
-
 hero:
   name: "Rat Panel"
   text: "Simple · lightweight · efficient"
@@ -13,7 +12,6 @@ hero:
     - theme: alt
       text: Quick install
       link: /quickstart/install
-
 features:
   - icon: ✨
     title: Extremely low occupancy
