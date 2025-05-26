@@ -33,7 +33,7 @@ export const config = defineConfig({
     },
     footer: {
       message: "<b style=\"font-size: larger\">严禁使用耗子面板从事违法活动，我司不对违规用户提供任何服务</b>",
-      copyright: `© 2022-${new Date().getFullYear()} Tianjin Rat Technology Co., Ltd All Rights Reserved.丨<a target="_blank" href="https://beian.miit.gov.cn/" rel="noreferrer">津ICP备2022009678号-1</a>丨<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=12011502000848" rel="noreferrer">津公网安备12011502000848号</a>`
+      copyright: `© 2022-${new Date().getFullYear()} 天津耗子科技有限公司 版权所有丨<a target="_blank" href="https://beian.miit.gov.cn/" rel="noreferrer">津ICP备2022009678号-1</a>丨<a target="_blank" href="https://beian.mps.gov.cn/#/query/webSearch?code=12011502000848" rel="noreferrer">津公网安备12011502000848号</a>`
     },
     docFooter: {
       prev: "上一页",
