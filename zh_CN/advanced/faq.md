@@ -1,4 +1,4 @@
-# 配置 QUIC（HTTP3）
+## 配置 QUIC（HTTP3）
 
 面板目前已支持自动 QUIC 配置，但是出于兼容性考虑，默认未添加 `Alt-Svc` 标头。 浏览器在未检测到 `Alt-Svc` 标头时不会尝试使用 QUIC 连接。
 
@@ -14,7 +14,7 @@ add_header Alt-Svc 'h3=":$server_port"; ma=2592000';
 
 - 根据 Nginx 的 git 提交记录，1.25 版本下所有 QUIC 草案版本已经移除，因此 `Alt-Svc` 无需添加草案版本号。
 
-# 配置 TLSv1.1 TLSv1
+## 配置 TLSv1.1 TLSv1
 
 当前面板 OpenResty 使用 OpenSSL 3.5 版本编译，默认禁用已弃用的 TLSv1.1 TLSv1 协议。
 
@@ -26,27 +26,27 @@ ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDS
 ssl_prefer_server_ciphers on;
 ```
 
-# 配置反向代理
+## 配置反向代理
 
 面板 v2.4.10+ 自带反向代理配置生成器，你可以通过站点伪静态配置页面的右上角打开使用。
 
 注意：如果设置反向代理后出现 CSS/JS 等静态资源无法正常加载的问题，请移除站点主配置文件中的**不记录静态文件日志**部分。
 
-# 配置进程守护
+## 配置进程守护
 
 1. 安装 Supervisor 管理器并打开。
 2. Supervisor 管理器中创建需要守护的进程（运行用户不建议使用 root）。
 3. 常见问题：[https://tom.moe/t/supervisor/3112](https://tom.moe/t/supervisor/3112)
 
-# 配置 IPv6
+## 配置 IPv6
 
 如果您想要启用 IPv6 支持，您需要将 `[::]:80` 和 `[:]:443` 添加到网站的监听地址配置。
 
-# 配置容器镜像加速
+## 配置容器镜像加速
 
 由于一些原因国内可能无法连接到 Docker Hub 拉取容器镜像，因此需要配置镜像加速。
 
-## 对于 Podman
+### 对于 Podman
 
 在面板打开 Podman 设置页面，导航到注册表配置选项卡。
 
@@ -61,7 +61,7 @@ location = "docker.1ms.run"
 
 其中 docker.1ms.run 为配置的镜像加速地址。 可自行参考其他教程搭建使用。
 
-## 对于 Docker
+### 对于 Docker
 
 在面板打开 Docker 设置页面，导航到配置选项卡。
 
