@@ -1,6 +1,6 @@
-# Frequently Asked Questions
+# 常见问题
 
-Here are some common questions and answers about RatPanel. If you have any other questions, please feel free to ask in the [RatPanel Community](https://tom.moe/c/technical/ratpanel). If you find any bugs, please submit a [GitHub Issue](https://github.com/tnb-labs/panel/issues).
+以下是关于耗子面板的一些常见问题和解答。 如果您有任何其他问题，请随时在[耗子面板论坛](https://tom.moe/c/technical/ratpanel)提问。 如果您发现任何 Bugs，请提交一个 [GitHub Issue](https://github.com/tnb-labs/panel/issues)。
 
 ## 配置 QUIC（HTTP3）
 
