@@ -38,9 +38,9 @@ ssl_prefer_server_ciphers on;
 2. Supervisor 管理器中创建需要守护的进程（运行用户不建议使用 root）。
 3. 常见问题：[https://tom.moe/t/supervisor/3112](https://tom.moe/t/supervisor/3112)
 
-# Configure IPv6
+# 配置 IPv6
 
-If you want to enable IPv6 support, you need to add `[::]:80` and `[::]:443` to the website's listening address configuration.
+如果您想要启用 IPv6 支持，您需要将 `[::]:80` 和 `[:]:443` 添加到网站的监听地址配置。
 
 # 配置容器镜像加速
 
