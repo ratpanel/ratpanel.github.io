@@ -1,9 +1,8 @@
 ---
 layout: home
-
 hero:
-  name: "耗子面板"
-  text: "简单轻量 • 高效运维"
+  name: 耗子面板
+  text: 简单轻量 • 高效运维
   tagline: 全能服务器运维管理面板
   actions:
     - theme: brand
@@ -13,7 +12,6 @@ hero:
     - theme: alt
       text: 快速安装
       link: /zh_CN/quickstart/install
-
 features:
   - icon: ✨
     title: 极低占用
@@ -25,7 +23,7 @@ features:
     title: 追随时代
     details: 整体设计走在时代前沿，对新系统兼容性好，在同类产品中处于领先地位
   - icon: 🚀
-    title: 高效运维
+    title: Efficient operation and maintenance
     details: 功能完善，自定义能力强，既可快速部署小型网站，也可基于定制化需求部署复杂应用
   - icon: ⛓️‍💥
     title: 离线运行
@@ -43,8 +41,7 @@ features:
 
 ## 合作伙伴
 
-<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
-    <a href="https://www.weixiaoduo.com/" style="padding: 1rem;">
+<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;"><a href="https://www.weixiaoduo.com/" style="padding: 1rem;">
       <img width="160" src="/wxd.png" alt="微晓朵">
     </a>
     <a href="https://www.dkdun.cn/aff/MQZZNVHQ" style="padding: 1rem;">
