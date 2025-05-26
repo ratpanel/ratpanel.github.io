@@ -6,7 +6,7 @@ next: false
 
 # 证书
 
-If the 3-month free certificate cannot meet your needs, you can choose to purchase higher-level certificates. 若 3 个月免费证书无法满足您的需求，您可以选择购买更高级别的证书。我们提供 DV 单域名证书和 DV 通配符证书可供选择。
+若 3 个月免费证书无法满足您的需求，您可以选择购买更高级别的证书。 我们提供 DV 单域名证书和 DV 通配符证书可供选择。
 
 受限价政策，具体价格及购买请直接通过右上角加群联系销售。
 
