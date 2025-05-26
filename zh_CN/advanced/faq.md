@@ -1,3 +1,7 @@
+# Frequently Asked Questions
+
+Here are some common questions and answers about RatPanel. If you have any other questions, please feel free to ask in the [RatPanel Community](https://tom.moe/c/technical/ratpanel). If you find any bugs, please submit a [GitHub Issue](https://github.com/tnb-labs/panel/issues).
+
 ## 配置 QUIC（HTTP3）
 
 面板目前已支持自动 QUIC 配置，但是出于兼容性考虑，默认未添加 `Alt-Svc` 标头。 浏览器在未检测到 `Alt-Svc` 标头时不会尝试使用 QUIC 连接。
