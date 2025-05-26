@@ -1,3 +1,7 @@
+# 常见问题
+
+以下是关于耗子面板的一些常见问题和解答。 如果您有任何其他问题，请随时在[耗子面板论坛](https://tom.moe/c/technical/ratpanel)提问。 如果您发现任何 Bugs，请提交一个 [GitHub Issue](https://github.com/tnb-labs/panel/issues)。
+
 ## 配置 QUIC（HTTP3）
 
 面板目前已支持自动 QUIC 配置，但是出于兼容性考虑，默认未添加 `Alt-Svc` 标头。 浏览器在未检测到 `Alt-Svc` 标头时不会尝试使用 QUIC 连接。

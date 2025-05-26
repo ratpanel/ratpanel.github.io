@@ -10,7 +10,7 @@ next: false
 
 我们提供免费的论坛服务，您可以在论坛中提问、交流、分享面板使用中的问题。
 
-- [Moe Tom](https://tom.moe)
+- [Moe Tom](https://tom.moe/c/technical/ratpanel)
 
 ## 付费远程服务
 
