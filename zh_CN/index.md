@@ -23,7 +23,7 @@ features:
     title: 追随时代
     details: 整体设计走在时代前沿，对新系统兼容性好，在同类产品中处于领先地位
   - icon: 🚀
-    title: Efficient operation and maintenance
+    title: 高效运维
     details: 功能完善，自定义能力强，既可快速部署小型网站，也可基于定制化需求部署复杂应用
   - icon: ⛓️‍💥
     title: 离线运行
