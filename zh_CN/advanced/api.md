@@ -2,9 +2,9 @@
 
 ## 概述
 
-耗子面板提供了一套安全的 RESTful 接口，用于与面板系统进行交互。所有 API 请求都需要进行 HMAC-SHA256 签名认证以确保通信的安全性和完整性。
+RatPanel provides a secure RESTful interface for interacting with the panel system. All API requests require HMAC-SHA256 signature authentication to ensure the security and integrity of communications.
 
-## 基础信息
+## Basic Information
 
 - **基础 URL**: `http(s)://your-panel-domain/{entry}/api/`
 - **内容类型**: 所有请求和响应均使用 `application/json`
@@ -12,10 +12,10 @@
 
 ## 认证机制
 
-API 使用 HMAC-SHA256 签名算法进行认证。每个请求必须包含以下 HTTP 头：
+API 使用 HMAC-SHA256 签名算法进行认证。每个请求必须包含以下 HTTP 头： Each request must include the following HTTP headers:
 
 | 头部名称            | 描述                                                              |
-|-----------------|-----------------------------------------------------------------|
+| --------------- | --------------------------------------------------------------- |
 | `Content-Type`  | 设置为 `application/json`                                          |
 | `X-Timestamp`   | 当前 UNIX 时间戳（秒）                                                  |
 | `Authorization` | 身份验证信息，格式为 `HMAC-SHA256 Credential={id}, Signature={signature}` |
@@ -629,7 +629,7 @@ sendApiRequest();
 ## 常见响应码
 
 | HTTP 状态码 | 描述      |
-|----------|---------|
+| -------- | ------- |
 | 200      | 请求成功    |
 | 401      | 身份验证失败  |
 | 403      | 权限不足    |
