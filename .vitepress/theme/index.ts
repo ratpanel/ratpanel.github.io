@@ -1,17 +1,14 @@
-// https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
-import type { Theme } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
-import './style.css'
+import TwoslashFloatingVue from '@shikijs/vitepress-twoslash/client'
+import Theme from 'vitepress/theme'
+import '@shikijs/vitepress-twoslash/style.css'
+import 'virtual:group-icons.css'
+import "vitepress-markdown-timeline/dist/theme/index.css";
+import type {EnhanceAppContext} from 'vitepress'
+import './styles.css'
 
 export default {
-  extends: DefaultTheme,
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    })
-  },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  extends: Theme,
+  enhanceApp({app}: EnhanceAppContext) {
+    app.use(TwoslashFloatingVue)
   }
-} satisfies Theme
+}

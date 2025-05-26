@@ -49,18 +49,18 @@ features:
 
 <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
     <a href="https://www.weixiaoduo.com/" style="padding: 1rem;">
-      <img width="160" src="/.github/assets/wxd.png" alt="微晓朵">
+      <img width="160" src="/wxd.png" alt="微晓朵">
     </a>
     <a href="https://www.dkdun.cn/aff/MQZZNVHQ" style="padding: 1rem;">
-      <img width="160" src="/.github/assets/dk.png" alt="林枫云">
+      <img width="160" src="/dk.png" alt="林枫云">
     </a>
     <a href="https://waf.pro/">
-      <img width="160" src="/.github/assets/wafpro.png" alt="WAFPRO" style="padding: 1rem;">
+      <img width="160" src="/wafpro.png" alt="WAFPRO" style="padding: 1rem;">
     </a>
     <a href="https://scdn.ddunyun.com/">
-      <img width="160" src="/.github/assets/ddunyun.png" alt="盾云SCDN" style="padding: 1rem;">
+      <img width="160" src="/ddunyun.png" alt="盾云SCDN" style="padding: 1rem;">
     </a>
     <a href="https://1ms.run/" style="padding: 1rem;">
-      <img width="160" src="/.github/assets/1ms.svg" alt="毫秒镜像">
+      <img width="160" src="/1ms.svg" alt="毫秒镜像">
     </a>
 </div>
