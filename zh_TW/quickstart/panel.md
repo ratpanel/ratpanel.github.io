@@ -14,6 +14,14 @@ panel-cli
 
 Follow the prompts to complete the necessary commands for operation.
 
+For example, to change a user's password, you can use:
+
+```bash
+panel-cli user password haozi 123456
+```
+
+This will change the password for the user `haozi` to `123456`.
+
 ## Uninstall Panel
 
 It is primarily recommended to back up data and reinstall the system, as this ensures a clean system.
