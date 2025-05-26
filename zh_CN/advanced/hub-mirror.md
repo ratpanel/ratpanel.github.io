@@ -15,7 +15,7 @@ location = "docker.io"
 location = "docker.1ms.run"
 ```
 
-其中 docker.1ms.run 为配置的镜像加速地址，可自行参考其他教程搭建使用。
+其中 docker.1ms.run 为配置的镜像加速地址。 可自行参考其他教程搭建使用。
 
 ## 对于 Docker
 
@@ -29,4 +29,4 @@ location = "docker.1ms.run"
 }
 ```
 
-其中 https://docker.1ms.run 为配置的镜像加速地址，可自行参考其他教程搭建使用。
+其中 docker.1ms.run 为配置的镜像加速地址。 可自行参考其他教程搭建使用。
