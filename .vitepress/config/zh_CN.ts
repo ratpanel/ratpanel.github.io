@@ -12,11 +12,11 @@ export const config = defineConfig({
     nav: nav(),
     sidebar: [{
       text: "快速开始",
-      base: locale == 'en' ? "/zh_CN/quickstart" : `/${locale}/zh_CN/quickstart`,
+      base: locale == 'en' ? '/quickstart' : `/${locale}/quickstart`,
       items: sidebarQuickstart()
     }, {
       text: "进阶指南",
-      base: locale == 'en' ? "/zh_CN/advanced" : `/${locale}/zh_CN/advanced`,
+      base: locale == 'en' ? '/advanced' : `/${locale}/advanced`,
       items: sidebarAdvanced()
     }, {
       text: "版本历史",
@@ -65,16 +65,16 @@ function nav(): DefaultTheme.NavItem[] {
     link: locale == 'en' ? '/' : `/${locale}/`
   }, {
     text: "文档",
-    link: locale == 'en' ? "/zh_CN/quickstart/install" : `/${locale}/zh_CN/quickstart/install`
+    link: locale == 'en' ? '/quickstart/install' : `/${locale}/quickstart/install`
   }, {
     text: "支持",
-    link: locale == 'en' ? "/zh_CN/support" : `/${locale}/zh_CN/support`
+    link: locale == 'en' ? '/support' : `/${locale}/support`
   }, {
     text: "🔥证书",
-    link: locale == 'en' ? "/zh_CN/cert" : `/${locale}/zh_CN/cert`
+    link: locale == 'en' ? '/cert' : `/${locale}/cert`
   }, {
     text: "关于",
-    link: locale == 'en' ? "/zh_CN/about" : `/${locale}/zh_CN/about`
+    link: locale == 'en' ? '/about' : `/${locale}/about`
   }];
 }
 function sidebarQuickstart(): DefaultTheme.SidebarItem[] {
