@@ -1,4 +1,5 @@
 import { type DefaultTheme, defineConfig } from 'vitepress';
+const locale = '';
 const resp = await (await fetch('https://panel.haozi.net/api/versions')).json();
 const versions = resp.data.slice(0, 10).map((item: any) => {
   return item.version;
@@ -21,7 +22,6 @@ export const config = defineConfig({
       text: "版本历史",
       collapsed: true,
       items: [...versions.map((version: string) => {
-        const locale = '';
         return {
           text: version,
           link: locale ? `/${locale}/version-${version}` : `/version-${version}`
