@@ -1,5 +1,5 @@
 import { type DefaultTheme, defineConfig } from 'vitepress';
-const locale = 'en';
+const locale = "zh_CN";
 const resp = await (await fetch('https://panel.haozi.net/api/versions')).json();
 const versions = resp.data.slice(0, 10).map((item: any) => {
   return item.version;
@@ -12,11 +12,11 @@ export const config = defineConfig({
     nav: nav(),
     sidebar: [{
       text: "快速开始",
-      base: "/zh_CN/quickstart",
+      base: locale == 'en' ? "/zh_CN/quickstart" : `/${locale}/zh_CN/quickstart`,
       items: sidebarQuickstart()
     }, {
       text: "进阶指南",
-      base: "/zh_CN/advanced",
+      base: locale == 'en' ? "/zh_CN/advanced" : `/${locale}/zh_CN/advanced`,
       items: sidebarAdvanced()
     }, {
       text: "版本历史",
@@ -24,7 +24,7 @@ export const config = defineConfig({
       items: [...versions.map((version: string) => {
         return {
           text: version,
-          link: locale != 'en' ? `/${locale}/version-${version}` : `/version-${version}`
+          link: locale == 'en' ? `/version-${version}` : `/${locale}/version-${version}`
         };
       })]
     }],
@@ -62,19 +62,19 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [{
     text: "首页",
-    link: "/zh_CN/"
+    link: locale == 'en' ? '/' : `/${locale}/`
   }, {
     text: "文档",
-    link: "/zh_CN/quickstart/install"
+    link: locale == 'en' ? "/zh_CN/quickstart/install" : `/${locale}/zh_CN/quickstart/install`
   }, {
     text: "支持",
-    link: "/zh_CN/support"
+    link: locale == 'en' ? "/zh_CN/support" : `/${locale}/zh_CN/support`
   }, {
     text: "🔥证书",
-    link: "/zh_CN/cert"
+    link: locale == 'en' ? "/zh_CN/cert" : `/${locale}/zh_CN/cert`
   }, {
     text: "关于",
-    link: "/zh_CN/about"
+    link: locale == 'en' ? "/zh_CN/about" : `/${locale}/zh_CN/about`
   }];
 }
 function sidebarQuickstart(): DefaultTheme.SidebarItem[] {
