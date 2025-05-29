@@ -21,9 +21,10 @@ export const config = defineConfig({
       text: "Versions",
       collapsed: true,
       items: [...versions.map((version: string) => {
+        const locale = '';
         return {
           text: version,
-          link: "/version-" + version
+          link: locale ? `/${locale}/version-${version}` : `/version-${version}`
         };
       })]
     }],
