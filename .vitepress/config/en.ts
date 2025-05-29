@@ -31,7 +31,7 @@ export const config = defineConfig({
                     ...versions.map((version: string) => {
                         return {
                             text: version,
-                            link: `/version-${version}`
+                            link: "/version-" + version
                         }
                     })
                 ]
