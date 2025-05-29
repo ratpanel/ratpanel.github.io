@@ -18,12 +18,12 @@ export const config = defineConfig({
         sidebar: [
             {
                 text: "Quickstart",
-                base: '/quickstart',
+                base: locale == 'en' ? '/quickstart' : `/${locale}/quickstart`,
                 items: sidebarQuickstart()
             },
             {
                 text: "Advanced",
-                base: '/advanced',
+                base: locale == 'en' ? '/advanced' : `/${locale}/advanced`,
                 items: sidebarAdvanced()
             },
             {
@@ -33,7 +33,7 @@ export const config = defineConfig({
                     ...versions.map((version: string) => {
                         return {
                             text: version,
-                            link: locale != 'en' ? `/${locale}/version-${version}` : `/version-${version}`
+                            link: locale == 'en' ? `/version-${version}` : `/${locale}/version-${version}`
                         }
                     })
                 ]
@@ -74,11 +74,26 @@ export const config = defineConfig({
 
 function nav(): DefaultTheme.NavItem[] {
     return [
-        {text: 'Home', link: '/'},
-        {text: 'Document', link: '/quickstart/install'},
-        {text: 'Support', link: '/support'},
-        {text: '🔥Certificate', link: '/cert'},
-        {text: 'About', link: '/about'},
+        {
+            text: 'Home',
+            link: locale == 'en' ? '/' : `/${locale}/`
+        },
+        {
+            text: 'Document',
+            link: locale == 'en' ? '/quickstart/install' : `/${locale}/quickstart/install`
+        },
+        {
+            text: 'Support',
+            link: locale == 'en' ? '/support' : `/${locale}/support`
+        },
+        {
+            text: '🔥Certificate',
+            link: locale == 'en' ? '/cert' : `/${locale}/cert`
+        },
+        {
+            text: 'About',
+            link: locale == 'en' ? '/about' : `/${locale}/about`
+        },
     ]
 }
 
