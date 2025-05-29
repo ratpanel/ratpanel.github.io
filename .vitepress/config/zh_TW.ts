@@ -12,11 +12,11 @@ export const config = defineConfig({
     nav: nav(),
     sidebar: [{
       text: "Quickstart",
-      base: '/quickstart',
+      base: locale == 'en' ? '/quickstart' : `/${locale}/quickstart`,
       items: sidebarQuickstart()
     }, {
       text: "Advanced",
-      base: '/advanced',
+      base: locale == 'en' ? '/advanced' : `/${locale}/advanced`,
       items: sidebarAdvanced()
     }, {
       text: "Versions",
@@ -24,7 +24,7 @@ export const config = defineConfig({
       items: [...versions.map((version: string) => {
         return {
           text: version,
-          link: locale != 'en' ? `/${locale}/version-${version}` : `/version-${version}`
+          link: locale == 'en' ? `/version-${version}` : `/${locale}/version-${version}`
         };
       })]
     }],
@@ -62,19 +62,19 @@ export const config = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [{
     text: 'Home',
-    link: '/'
+    link: locale == 'en' ? '/' : `/${locale}/`
   }, {
     text: 'Document',
-    link: '/quickstart/install'
+    link: locale == 'en' ? '/quickstart/install' : `/${locale}/quickstart/install`
   }, {
     text: 'Support',
-    link: '/support'
+    link: locale == 'en' ? '/support' : `/${locale}/support`
   }, {
     text: "🔥證書",
-    link: '/cert'
+    link: locale == 'en' ? '/cert' : `/${locale}/cert`
   }, {
     text: 'About',
-    link: '/about'
+    link: locale == 'en' ? '/about' : `/${locale}/about`
   }];
 }
 function sidebarQuickstart(): DefaultTheme.SidebarItem[] {
