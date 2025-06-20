@@ -1,8 +1,8 @@
 ---
 layout: home
 hero:
-  name: 耗子面板
-  text: Simple · lightweight · efficient
+  name: "耗子面板"
+  text: "Simple · lightweight · efficient"
   tagline: Enterprise server operation and maintenance management panel
   actions:
     - theme: brand
@@ -52,6 +52,9 @@ features:
     </a>
     <a href="https://scdn.ddunyun.com/">
       <img width="160" src="/ddunyun.png" alt="DunYun SCDN" style="padding: 1rem;">
+    </a>
+    <a href="https://kuocai.cn/" style="padding: 1rem;">
+      <img width="160" src="/kuocai.png" alt="Kuocai CDN">
     </a>
     <a href="https://1ms.run/" style="padding: 1rem;">
       <img width="160" src="/1ms.svg" alt="Millisecond Mirror">
