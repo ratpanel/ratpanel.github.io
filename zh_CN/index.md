@@ -1,8 +1,8 @@
 ---
 layout: home
 hero:
-  name: 耗子面板
-  text: 简单轻量 • 高效运维
+  name: "耗子面板"
+  text: "简单轻量 • 高效运维"
   tagline: 全能服务器运维管理面板
   actions:
     - theme: brand
@@ -42,18 +42,21 @@ features:
 ## 合作伙伴
 
 <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;"><a href="https://www.weixiaoduo.com/" style="padding: 1rem;">
-      <img width="160" src="/wxd.png" alt="微晓朵">
+      <img width="160" src="/wxd.png" alt="WeiXiaoDuo">
     </a>
     <a href="https://www.dkdun.cn/aff/MQZZNVHQ" style="padding: 1rem;">
-      <img width="160" src="/dk.png" alt="林枫云">
+      <img width="160" src="/dk.png" alt="LinFeng Cloud">
     </a>
     <a href="https://waf.pro/">
       <img width="160" src="/wafpro.png" alt="WAFPRO" style="padding: 1rem;">
     </a>
     <a href="https://scdn.ddunyun.com/">
-      <img width="160" src="/ddunyun.png" alt="盾云SCDN" style="padding: 1rem;">
+      <img width="160" src="/ddunyun.png" alt="DunYun SCDN" style="padding: 1rem;">
+    </a>
+    <a href="https://kuocai.cn/" style="padding: 1rem;">
+      <img width="160" src="/kuocai.png" alt="Kuocai CDN">
     </a>
     <a href="https://1ms.run/" style="padding: 1rem;">
-      <img width="160" src="/1ms.svg" alt="毫秒镜像">
+      <img width="160" src="/1ms.svg" alt="Millisecond Mirror">
     </a>
 </div>
