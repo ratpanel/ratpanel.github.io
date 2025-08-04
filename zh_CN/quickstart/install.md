@@ -34,7 +34,7 @@
 以 `root` 用户登录服务器，运行以下命令安装面板：
 
 ```shell
-curl -fsLm 10 -o install.sh https://dl.cdn.haozi.net/panel/install.sh && bash install.sh
+curl -sSLOm 10 https://dl.cdn.haozi.net/panel/install.sh && bash install.sh
 ```
 
 一般 2 分钟内即可完成安装。 安装过程中请勿关闭终端。

@@ -34,7 +34,7 @@ As system versions continue to update, we may also terminate support for some ov
 Log in to the server as `root` user and run the following command to install the Panel:
 
 ```shell
-curl -fsLm 10 -o install.sh https://dl.cdn.haozi.net/panel/install.sh && bash install.sh
+curl -sSLOm 10 https://dl.cdn.haozi.net/panel/install.sh && bash install.sh
 ```
 
 Installation is usually completed within 2 minutes. Do not close the terminal during the installation process.
