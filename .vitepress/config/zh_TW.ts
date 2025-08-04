@@ -1,5 +1,5 @@
 import { type DefaultTheme, defineConfig } from 'vitepress';
-const locale = 'en';
+const locale = "zh_TW";
 const resp = await (await fetch('https://panel.haozi.net/api/versions')).json();
 const versions = resp.data.slice(0, 10).map((item: any) => {
   return item.version;
