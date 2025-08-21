@@ -6,9 +6,9 @@ RatPanel provides a secure RESTful interface for interacting with the panel syst
 
 ## Basic Information
 
-- **Base URL**: `http(s)://your-panel-domain/{entry}/api/`
-- **Content Type**: All requests and responses use `application/json`
-- **Character Encoding**: UTF-8
+ - **Base URL**: `http(s)://your-panel-domain/{entry}/api/`
+ - **Content Type**: All requests and responses use `application/json`
+ - **Character Encoding**: UTF-8
 
 ## Authentication Mechanism
 
@@ -649,13 +649,13 @@ sendApiRequest();
 
 If you encounter signature verification failures, check:
 
-- Ensure you are using the correct API token and ID
-- Check that the client and server times are accurate; timestamp differences greater than 300 seconds will cause verification to fail
-- Ensure the request body hasn't been modified before or after signature calculation
-- Ensure the URL path is handled correctly; remember to remove the entry prefix when normalizing the path
+ - Ensure you are using the correct API token and ID
+ - Check that the client and server times are accurate; timestamp differences greater than 300 seconds will cause verification to fail
+ - Ensure the request body hasn't been modified before or after signature calculation
+ - Ensure the URL path is handled correctly; remember to remove the entry prefix when normalizing the path
 
 ### Request Timeout
 
-- Check network connection
-- Confirm server status
-- Consider increasing the client timeout settings
+ - Check network connection
+ - Confirm server status
+ - Consider increasing the client timeout settings
